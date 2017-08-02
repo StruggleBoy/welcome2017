@@ -6,16 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="./stylesheets/layout.css">
 </head>
 <body>
-    <div>导航栏</div>
-    <ul>
-        <li><a href="/training">重邮军训</a></li>
-        <li><a href="/data">重邮数据</a></li>
-        <li><a href="/guide">新生攻略</a></li>
-        <li><a href="/mien">新生风采</a></li>
-        <li><a href="/activity">迎新活动</a></li>
-    </ul>
-    <%- body %>
+    <header>
+        <div class="header">
+            <img src="./images/qrcode1.png"  class='qrcode1'>
+            <img src="./images/qrcode2.png"  class='qrcode2'>
+            <img class='logo' src="images/logo.png" alt="">
+            <div class="banner">
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/training">军训专题</a></li>
+                    <li><a href="/guide">邮子攻略</a></li>
+                    <li><a href="/data">重邮数据</a></li>
+                    <li><a href="/mien">重邮风采</a></li>
+                    <li><a href="/activity">迎新活动</a></li>
+                    <li><a href="http://hongyan.cqupt.edu.cn/aboutus/">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="header2"></div>
+
+    <div class='contain'>
+        <div class="car"></div>
+        <%- body %>
+    </div>
+
+    <div class="footer">
+        <div class="content">
+            <p>
+                <a href="http://hongyan.cqupt.edu.cn/aboutus/">关于红岩网校</a>
+                <span>|</span>
+                <a href="##">网站地图</a>
+                <span>|</span>
+                <a href="##">指出错误</a>
+                <span>|</span>
+                <a href="##">管理入口</a>
+            </p>
+            <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+            <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail :redrock@cqupt.edu.cn (023-62461084)</p>
+
+        
+        </div>
+    </div>
+
+    
+
+<script>
+
+</script>
 </body>
 </html>
