@@ -21,6 +21,7 @@ header {
     height: 78px;
     background: #fff;
     position: fixed;
+    z-index: 1000;
     top: 0;
 }
 
@@ -89,13 +90,42 @@ header {
 }
 
 .car {
+    position: relative;
     width: 1000px;
     height: 738px;
-    margin: 39px auto 0;
-    background: url(../images/countdown.png)
+    margin: 70px auto 0;
+    background: url(../images/countdown.png);
+}
+
+.timeBar{
+    position: absolute;
+    top: 400px;
+    left: 255px;
+    width: 460px;
+    height: 68px;
+    transform: rotate(3.8deg);
+}
+
+.timeBar .td{
+    position: relative;
+    top: 2px;
+    float: left;
+    width: 70px;
+    height: 64px;
+    padding: 0 8px;
+    margin-right: 18px;
+    overflow: hidden;
 }
 
 
+
+.min{
+    margin-left: 18px;
+}
+
+.sec{
+    margin-left: 20px;
+}
 
 
 
