@@ -1,0 +1,46 @@
+.index {
+    width: 1100px;
+    height: 4050px;
+    margin: 0 auto;
+}
+
+.map {
+    width: 1100px;
+    height: 732px;
+    background: url(../images/map-box.png);
+    margin-bottom: 94px;
+}
+
+.training {
+    width: 1100px;
+    height: 732px;
+    background: url(../images/training-box.png);
+    margin-bottom: 94px;
+}
+
+.fourBox {
+    width: 1100px;
+    height: 1325px;
+}
+
+
+
+.smallBox {
+    width: 550px;
+    height: 662px;
+    float: left;
+}
+
+/* .guide {
+    background: url(../images/guide-box.png);
+    background-size: cover;
+}
+.activity {
+    background: url(../images/activity-box.png);
+}
+.mien {
+    background: url(../images/mien-box.png);
+}
+.aboutus {
+    background: blue;
+} */
