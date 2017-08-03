@@ -60,20 +60,26 @@ header {
     display: block;
     height: 78px;
     line-height: 78px;
-    margin-left: 12px;
-    margin-right: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     float: left;
-    
+    /* transition: color 1s, background-color 1s;
+    -webkit-transition: color 1s, background-color 1s; */
 }
-
+.clicked {
+    background: rgb(164, 240, 135);
+    color: #fff;
+}
 .banner li a {
+    display: block;
+    height: 100%;
     color: #000;
     font-size: 20px;
 }
 
 .header2 {
     width: 100%;
-    height: 39px;
+    height: 5px;
 } 
 
 
@@ -81,13 +87,13 @@ header {
 .qrcode1 {
     position: absolute;
     top: 335px;
-    left: -180px;
+    left: -300px;
 }
 
 .qrcode2 {
     position: absolute;
     top: 335px;
-    right: -180px;
+    right: -300px;
 }
 
 
@@ -99,6 +105,7 @@ header {
     background: url(../images/background.png) no-repeat center center;
     overflow: hidden;
     background-position: top;
+    background-size: 100% 100%;
 }
 
 .car {
