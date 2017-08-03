@@ -12,8 +12,20 @@ a {
     color: #555
 }
 
+button {
+    padding: 0;
+    cursor: pointer; 
+    background: none; 
+    border: none; 
+    outline: none; 
+    -webkit-appearance: none;  
+}
 
 
+p {
+    font-size: 12px;
+    font-family: 'SimSun';
+}
 /* 导航栏 */
 
 header {
