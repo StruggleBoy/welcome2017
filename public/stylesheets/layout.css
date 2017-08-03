@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: '微软雅黑'
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #555
+}
+
+button {
+    padding: 0;
+    cursor: pointer; 
+    background: none; 
+    border: none; 
+    outline: none; 
+    -webkit-appearance: none;  
+}
+
+
+p {
+    font-size: 12px;
+    font-family: 'SimSun';
+}
+/* 导航栏 */
+
+header {
+    width: 100%;
+    height: 78px;
+    background: #fff;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.header {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+}
+.banner {
+    width: 737px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    
+}
+.banner li {
+    display: block;
+    height: 78px;
+    line-height: 78px;
+    padding-left: 12px;
+    padding-right: 12px;
+    float: left;
+    /* transition: color 1s, background-color 1s;
+    -webkit-transition: color 1s, background-color 1s; */
+}
+.clicked {
+    background: rgb(164, 240, 135);
+    color: #fff;
+}
+.banner li a {
+    display: block;
+    height: 100%;
+    color: #000;
+    font-size: 20px;
+}
+
+.header2 {
+    width: 100%;
+    height: 5px;
+} 
+
+
+/* 二维码 */
+.qrcode1 {
+    position: absolute;
+    top: 335px;
+    left: -300px;
+}
+
+.qrcode2 {
+    position: absolute;
+    top: 335px;
+    right: -300px;
+}
+
+
+/* 主体部分 */
+
+.contain {
+    min-width: 1000px;
+    margin: 0 auto;
+    background: url(../images/background.png) no-repeat center center;
+    overflow: hidden;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.car {
+    position: relative;
+    width: 1000px;
+    height: 738px;
+    margin: 70px auto 0;
+    background: url(../images/countdown.png);
+}
+
+.timeBar{
+    position: absolute;
+    top: 400px;
+    left: 255px;
+    width: 460px;
+    height: 68px;
+    transform: rotate(3.8deg);
+}
+
+.timeBar .td{
+    position: relative;
+    top: 2px;
+    float: left;
+    width: 80px;
+    height: 70px;
+    padding: 5px;
+    margin-right: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+// <<<<<<< HEAD
+
+// =======
+// >>>>>>> fcc9df816c32c1ebe5aec8e8455238dd3db0ebd0
+// .minutes{
+//     margin-left: 14px;
+// }
+
+// .seconds{
+//     margin-left: 6px;
+// <<<<<<< HEAD
+
+// .min{
+//     margin-left: 18px;
+// =======
+// >>>>>>> fcc9df816c32c1ebe5aec8e8455238dd3db0ebd0
+// }
+
+.td .num{
+    width: 34px;
+    height: 38px;
+    margin-top: 10px;
+    float: right;
+    background: url(../images/time.png);
+}
+
+
+
+/* 底部 */
+
+.footer {
+    width: 100%;
+    height: 180px;
+    background: rgb(210, 243, 170);
+    position: relative;
+}
+
+.footer .content {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+}
+
+.footer .content p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: '微软雅黑';
+    color: #78b035;
+}
+.content a {
+    color: #78b035;
+}
