@@ -33,7 +33,7 @@ header {
     height: 78px;
     background: #fff;
     position: fixed;
-    z-index: 99999;
+    z-index: 1000;
     top: 0;
 }
 
@@ -63,24 +63,18 @@ header {
     padding-left: 12px;
     padding-right: 12px;
     float: left;
-    transition: background-color 1s; 
-    -webkit-transition: background-color 1s; 
+    /* transition: color 1s, background-color 1s;
+    -webkit-transition: color 1s, background-color 1s; */
 }
 .clicked {
     background: rgb(164, 240, 135);
+    color: #fff;
 }
-
-.banner li.clicked a {
-    color: #fff;    
-}
-
-
 .banner li a {
     display: block;
     height: 100%;
     color: #000;
     font-size: 20px;
-    transition: color 0.5s;
 }
 
 .header2 {
@@ -112,17 +106,14 @@ header {
     overflow: hidden;
     background-position: top;
     background-size: 100% 100%;
-    position: relative;
 }
 
 .car {
     position: relative;
-    z-index: 999;
     width: 1000px;
     height: 738px;
     margin: 70px auto 0;
-    background: url(../images/car.png) no-repeat;
-    background-position: 30px -15px;
+    background: url(../images/countdown.png);
 }
 
 .timeBar{
@@ -146,17 +137,12 @@ header {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .minutes{
     margin-left: 14px;
 }
 
 .seconds{
     margin-left: 6px;
-=======
-.min{
-    margin-left: 18px;
->>>>>>> d3e483e692f2b7a745fe606f6edf29f384dd2c39
 }
 
 .td .num{
@@ -166,53 +152,6 @@ header {
     float: right;
     background: url(../images/time.png);
 }
-
-
-/*地图*/
-
-/*.outer {
-    position: relative;
-    margin: 100px auto;
-    width: 1085px;
-    height: 767px;
-}*/
-.conter {
-    position: absolute;
-    width: 879px;
-    height: 432px;
-    left: 145px;
-    top: 190px;
-    overflow: hidden;         
-    border-radius: 50px;
-}
-.dragImg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: width 1s,height 1s;
-}
-.Img {
-    transition: width 1s,height 1s;        
-}
-.glass {
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    margin: 0 auto;
-    width: 100px;
-    height: 50px;
-    font-size: 50px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -243,104 +182,3 @@ header {
 .content a {
     color: #78b035;
 }
-
-
-
-/* 特效 */
-
-@keyframes flyUp {
-    from {
-        transform: translate(0, 0)
-    }
-
-    25% {
-        transform: translate(0, 20px)
-    }
-
-
-    50% {
-        transform: translate(0, 0px)
-    }
-    
-    75% {
-        transform: translate(0, -20px)
-    }
-    to {
-        transform: translate(0, 0)
-    }
-}
-
-@keyframes flyDown {
-    from {
-        transform: translate(0, 0)
-    }
-
-    25% {
-        transform: translate(0, -20px)
-    }
-
-
-    50% {
-        transform: translate(0, 0px)
-    }
-    
-    75% {
-        transform: translate(0, 20px)
-    }
-    to {
-        transform: translate(0, 0)
-    }
-}
-
-.qrcode1 {
-    animation: flyUp 8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-.qrcode2 {
-    animation: flyDown 8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-.qrcode1:hover, .qrcode2:hover {
-    animation-play-state: paused;
-}
-
-@keyframes moveIn {
-    from {
-        transform: translate(0, 0)
-    }
-    25% {
-        transform: translate(0, 100px)
-    }
-    50% {
-        transform: translate(50px, 180px)
-    }
-    75% {
-        transform: translate(200px, 260px)
-    }
-    to {
-        transform: translate(250px, 300px)
-    }
-
-}
-
- 
-/* @keyframes flyBoy {
-    from {
-
-    }
-} */
-
- .boy {
-    /* animation:  */
-    width: 250px;
-    height: 320px;
-    background: url(../images/boy.png) no-repeat;
-} 
-
-/* .moveIn {
-    animation: moveIn 6s;
-}  */
