@@ -167,7 +167,7 @@
 
 .box-one {
     background: url(../images/box-one.png) no-repeat;
-    background-position: 0px 0px;
+    background-position: 0px -30px;
 }
 
 .box-two {
@@ -193,7 +193,7 @@
 .rightBox {
     position: absolute;
     bottom: 110px;
-    right: 160px;
+    right: 140px;
 }
 
 
