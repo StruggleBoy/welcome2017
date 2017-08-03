@@ -27,6 +27,7 @@
 }
 
 .map {
+    position: relative;
     width: 1200px;
     height: 760px;
     background: url(../images/map-box.png) no-repeat;
