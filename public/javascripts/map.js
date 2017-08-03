@@ -1,4 +1,5 @@
-var conterWidth = $('.conter').innerWidth(),
+$(function () {
+    var conterWidth = $('.conter').innerWidth(),
     conterHeight = $('.conter').innerHeight();
     console.log(conterHeight);
 
@@ -103,3 +104,6 @@ $small.click(function() {
         }
     }
 })
+})
+
+
