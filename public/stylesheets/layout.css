@@ -137,22 +137,12 @@ header {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> fcc9df816c32c1ebe5aec8e8455238dd3db0ebd0
 .minutes{
     margin-left: 14px;
 }
 
 .seconds{
     margin-left: 6px;
-<<<<<<< HEAD
-
-.min{
-    margin-left: 18px;
-=======
->>>>>>> fcc9df816c32c1ebe5aec8e8455238dd3db0ebd0
 }
 
 .td .num{
