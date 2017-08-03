@@ -1,8 +1,8 @@
-## 迎新网
+# 迎新网
 
 [TOC]
 
-#### 安装
+## 安装
 
 ```
 $git clone https://github.com/hongyan2017/welcome2017.git
@@ -15,7 +15,9 @@ $npm start
 
 
 
-#### 工作
+
+
+## 工作
 
 前端页面在**views文件夹**下，后缀为ejs,可以看成和html差不多。
 
@@ -62,10 +64,23 @@ JS可以先内联在HTML里
 
 注意**路径问题**
 
+## 如何提交
+
+代码完成后
+
+```
+$git add .
+$git commit
+$git push
+```
+
+如果github上代码有更新记得git pull到本地
 
 
-#### 提交日志
+
+## 提交日志
 
 
 
 8.2 上传部分首页
+
