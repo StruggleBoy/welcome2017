@@ -113,7 +113,8 @@ header {
     width: 1000px;
     height: 738px;
     margin: 70px auto 0;
-    background: url(../images/car.png);
+    background: url(../images/car.png) no-repeat;
+    background-position: 30px -15px;
 }
 .timeBar{
     position: absolute;
