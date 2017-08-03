@@ -146,17 +146,16 @@ header {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
+
 .minutes{
     margin-left: 14px;
 }
 
 .seconds{
     margin-left: 6px;
-=======
+
 .min{
     margin-left: 18px;
->>>>>>> d3e483e692f2b7a745fe606f6edf29f384dd2c39
 }
 
 .td .num{
