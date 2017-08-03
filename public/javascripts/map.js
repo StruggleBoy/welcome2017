@@ -88,14 +88,14 @@ $small.click(function() {
         $dragImg.css('width',ImgWidth);
         $dragImg.css('height',ImgHeight);
         if($dragImg.position().left < 0){
-            if($dragImg.position().left > (conterWidth - IW)) {
+            if($dragImg.position().left > (ImgWidth - IW)) {
                 $dragImg.css('left',0);           
             }else{
                 $dragImg.css('left',($dragImg.position().left + IW - ImgWidth) + 'px');
             }
         }
         if($dragImg.position().top < 0) {
-            if($dragImg.position().top > (conterHeight - IH)) {
+            if($dragImg.position().top > (ImgHeight - IH)) {
                 $dragImg.css('top',0 + 'px');           
             }else{
                 $dragImg.css('top',($dragImg.position().top + IH - ImgHeight) + 'px');
