@@ -160,43 +160,7 @@ header {
     float: right;
     background: url(../images/time.png);
 }
-// .timeBar{
-//     position: absolute;
-//     top: 400px;
-//     left: 255px;
-//     width: 460px;
-//     height: 68px;
-//     transform: rotate(3.8deg);
-// }
 
-// .timeBar .td{
-//     position: relative;
-//     top: 2px;
-//     float: left;
-//     width: 70px;
-//     height: 64px;
-//     padding: 0 8px;
-//     margin-right: 18px;
-//     overflow: hidden;
-// }
-
-// .min{
-//     margin-left: 18px;
-// }
-
-// .sec{
-//     margin-left: 20px;
-// }
-
-
-/*地图*/
-
-/*.outer {
-    position: relative;
-    margin: 100px auto;
-    width: 1085px;
-    height: 767px;
-}*/
 .conter {
     position: absolute;
     width: 879px;
@@ -267,7 +231,17 @@ header {
 
 
 
-/* 特效 */
+
+
+
+
+
+
+
+
+/* 
+ *特效 
+*/
 
 @keyframes flyUp {
     from {
@@ -277,7 +251,6 @@ header {
     25% {
         transform: translate(0, 20px)
     }
-
 
     50% {
         transform: translate(0, 0px)
@@ -329,39 +302,60 @@ header {
     animation-play-state: paused;
 }
 
-@keyframes moveIn {
+
+
+@keyframes swing {
     from {
-        transform: translate(0, 0)
+        transform: rotate(20deg)
     }
-    25% {
-        transform: translate(0, 100px)
+
+    20% {
+        transform: rotate(5deg);
+        transform-origin: 19% 40%;
+    }
+    40% {
+        transform: rotate(0deg);
+        transform-origin: 21% 41%;
     }
     50% {
-        transform: translate(50px, 180px)
+        transform: rotate(-3deg);
+        transform-origin: 17% 42%;
     }
-    75% {
-        transform: translate(200px, 260px)
+    60% {
+        transform: rotate(0deg);
+        transform-origin: 18% 42%;
+    }
+    80% {
+        transform: rotate(5deg);
+        transform-origin: 21% 39%;
     }
     to {
-        transform: translate(250px, 300px)
+        transform: rotate(0deg);
+        transform-origin: 20% 40%;
     }
 
 }
 
- 
-/* @keyframes flyBoy {
-    from {
 
-    }
-} */
 
  .boy {
-    /* animation:  */
     width: 250px;
     height: 320px;
     background: url(../images/boy.png) no-repeat;
+    transform-origin: 20% 40%;
+    position: relative;
+    top: -600px;
+    right: 50px;
+    animation: swing 8s infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 } 
 
-/* .moveIn {
-    animation: moveIn 6s;
-}  */
+
+.bird {
+    width: 230px;
+    height: 90px;
+    background: url(../images/bird.png) no-repeat;
+    position: relative;
+}

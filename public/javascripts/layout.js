@@ -26,12 +26,15 @@ function showTime(a, div) {
     Single = a % 10;
     yT = list[Tens];
     yS = list[Single];
-    console.log(div)
-    $( '.' + div + 'T').css('background-position', "40%" + yT +"%");
-    $('.' + div + 'S').css('background-position', "40%" + yS +"%");
+    // console.log('yT is' + yT);
+    console.log("40%" + yT +"%")
+    $( '.' + div + 'T').css('backgroundPosition', "40%" + yT +"%");
+    $('.' + div + 'S').css('backgroundPosition', "40%" + yS +"%");
 }
 
-setInterval(leftTimer(2017,9,14,0,0,0), 1000);
+window.setInterval("leftTimer(2017,9,14,0,0,0)", 1000);
+
+
 
 // })
 
@@ -50,11 +53,15 @@ function clickEvent() {
 
 //开场小人动画，加一个class，实际上是animation控制
 function moveIn() {
-    $('.cradle').addClass('moveIn')
+    $('.boy').animate({top: '140px'}, 1000 ).animate({top: '100'}, 1000)
 }
 
+function bird() {
+    $('.bird').animate({left: '+=1000px', bottom: '+=240px'}, 2000)
+}
 
 $(function () {
     clickEvent()
     moveIn()
+    bird()
 })
