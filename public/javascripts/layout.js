@@ -39,9 +39,24 @@
 
 
 // 导航栏特效
+function clickEvent() {
+    let pathName = location.pathname
+    let selector = `.banner-${pathName.slice(1)}`
+    if (pathName === '/') {
+        $('.banner-index').addClass('clicked')
+    }
+    else {
+        $(selector).addClass('clicked')
+    }
+}
+
+//开场小人动画，加一个class，实际上是animation控制
+function moveIn() {
+    $('.cradle').addClass('moveIn')
+}
 
 
-// $(document).ready(function () {
-//     let pathName = location.pathname;
-//     switch 
-// })
+$(function () {
+    clickEvent()
+    moveIn()
+})

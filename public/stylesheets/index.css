@@ -5,7 +5,8 @@
     height: 67px;
     background: rgb(255, 165, 125);
     border-radius: 20px;
-    box-shadow: 0 10px  rgb(255, 138, 86), 0 15px 16px 5px rgb(186, 216, 159);
+     box-shadow: 0 5px  rgb(255, 138, 86), 0 12px 14px 5px rgb(186, 216, 159); 
+    /* box-shadow: 0 0 0 2px #cff09e, 0 0 0 4px #bebe99; */
     line-height: 67px;
 }
 
