@@ -115,11 +115,10 @@ header {
     margin: 70px auto 0;
     background: url(../images/countdown.png);
 }
-
 .timeBar{
     position: absolute;
-    top: 400px;
-    left: 255px;
+    top: 405px;
+    left: 232px;
     width: 460px;
     height: 68px;
     transform: rotate(3.8deg);
@@ -137,12 +136,53 @@ header {
     box-sizing: border-box;
 }
 
+
+.minutes{
+    margin-left: 14px;
+}
+
+.seconds{
+    margin-left: 6px;
+}
+
+
 .td .num{
     width: 34px;
     height: 38px;
     margin-top: 10px;
     float: right;
     background: url(../images/time.png);
+
+}
+
+.conter {
+    position: absolute;
+    width: 879px;
+    height: 432px;
+    left: 145px;
+    top: 190px;
+    overflow: hidden;         
+    border-radius: 50px;
+}
+.dragImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 1s,height 1s;
+}
+.Img {
+    transition: width 1s,height 1s;        
+}
+.glass {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 100;
 }
 
 
@@ -173,4 +213,137 @@ header {
 }
 .content a {
     color: #78b035;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ *特效 
+*/
+
+@keyframes flyUp {
+    from {
+        transform: translate(0, 0)
+    }
+
+    25% {
+        transform: translate(0, 20px)
+    }
+
+    50% {
+        transform: translate(0, 0px)
+    }
+    
+    75% {
+        transform: translate(0, -20px)
+    }
+    to {
+        transform: translate(0, 0)
+    }
+}
+
+@keyframes flyDown {
+    from {
+        transform: translate(0, 0)
+    }
+
+    25% {
+        transform: translate(0, -20px)
+    }
+
+
+    50% {
+        transform: translate(0, 0px)
+    }
+    
+    75% {
+        transform: translate(0, 20px)
+    }
+    to {
+        transform: translate(0, 0)
+    }
+}
+
+.qrcode1 {
+    animation: flyUp 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.qrcode2 {
+    animation: flyDown 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.qrcode1:hover, .qrcode2:hover {
+    animation-play-state: paused;
+}
+
+
+
+@keyframes swing {
+    from {
+        transform: rotate(20deg)
+    }
+
+    20% {
+        transform: rotate(5deg);
+        transform-origin: 19% 40%;
+    }
+    40% {
+        transform: rotate(0deg);
+        transform-origin: 21% 41%;
+    }
+    50% {
+        transform: rotate(-3deg);
+        transform-origin: 17% 42%;
+    }
+    60% {
+        transform: rotate(0deg);
+        transform-origin: 18% 42%;
+    }
+    80% {
+        transform: rotate(5deg);
+        transform-origin: 21% 39%;
+    }
+    to {
+        transform: rotate(0deg);
+        transform-origin: 20% 40%;
+    }
+
+}
+
+
+
+ .boy {
+    width: 250px;
+    height: 320px;
+    background: url(../images/boy.png) no-repeat;
+    transform-origin: 20% 40%;
+    position: relative;
+    top: -600px;
+    right: 50px;
+    animation: swing 8s infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+} 
+
+
+.bird {
+    width: 230px;
+    height: 90px;
+    background: url(../images/bird.png) no-repeat;
+    position: relative;
+
 }
