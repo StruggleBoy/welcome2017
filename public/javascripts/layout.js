@@ -28,7 +28,7 @@ function showTime(a, div) {
     yT = list[Tens];
     yS = list[Single];
     // console.log('yT is' + yT);
-    console.log("40%" + yT +"%")
+    // console.log("40%" + yT +"%")
     $( '.' + div + 'T').css('backgroundPosition', "40%" + yT +"%");
     $('.' + div + 'S').css('backgroundPosition', "40%" + yS +"%");
 }
