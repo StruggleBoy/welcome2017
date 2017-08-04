@@ -153,26 +153,22 @@ header {
     margin-top: 10px;
     float: right;
     background: url(../images/time.png);
-
 }
 
 .conter {
     position: absolute;
     width: 879px;
     height: 432px;
-    left: 145px;
-    top: 190px;
-    overflow: hidden;         
-    border-radius: 50px;
+    left: 147px;
+    top: 189px;
+    overflow: hidden; 
 }
 .dragImg {
     position: absolute;
     left: 0;
     top: 0;
-    transition: width 1s,height 1s;
 }
 .Img {
-    transition: width 1s,height 1s;     
     width: 879px;
     height: 433px;   
 }
@@ -188,6 +184,8 @@ header {
     z-index: 100;
 }
 
+
+/* 小图标 */
 
 
 /* 底部 */
