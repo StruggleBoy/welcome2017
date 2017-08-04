@@ -1,0 +1,73 @@
+.training-mark {
+    position: absolute;
+    left: 474px;
+    top: -126px;
+    width: 260px;
+    height: 135px;
+    background: url(../images/training/trainingmark.png);
+}
+/*//1167 × 1274*/
+.training-banner {
+    position: relative;
+    width: 1167px;
+    height: 1274px;
+    margin: 135px auto;
+    background: url(../images/training/outline.png);
+}
+.training-nav {
+    position: absolute;
+    left: 162px;
+    top: 46px;
+    height: 85px;
+    width: 952px;
+}
+
+
+button.training-btn {
+    float: left;
+    width: 205px;
+    height: 80px;
+    margin-right: 30px;
+    box-shadow: -4px 4px 2px #a8ea6d,4px 0 2px #a8ea6d,-8px 8px 3px #ffbf1d;
+    text-align: center;
+    line-height: 80px;
+    background-color: #f1ffe6;
+    color: #f9a447;
+}
+button.training-btn:hover {
+    background-color: #ff8756;
+    box-shadow: -1px 1px 10px #ffffff,5px -5px 0px #fe6e34;
+    color: #ffffff;
+}
+
+.training-cont {
+    height: 951px;
+    width: 774px;
+    position: absolute;
+    top: 176px;
+    left: 236px;
+}
+.training-tip-nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+.training-tip-nav ul li{
+    float: left;
+    height: 73px;
+    width: 258px;
+    text-align: center;
+    line-height: 73px;
+}
+.training-tip-nav ul li a{
+    color: #50b102;
+}
+
+.training-tip-nav ul li:hover{
+    color: #f6a431;
+}
+.training-tip-content {
+    width: 774px;
+    height: 797px;
+    background: url(../images/training/tip-training.png);
+}
+
