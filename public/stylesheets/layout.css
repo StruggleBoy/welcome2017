@@ -172,7 +172,9 @@ header {
     transition: width 1s,height 1s;
 }
 .Img {
-    transition: width 1s,height 1s;        
+    transition: width 1s,height 1s;     
+    width: 879px;
+    height: 433px;   
 }
 .glass {
     position: absolute;
