@@ -572,3 +572,13 @@ header {
     position: relative;
 
 }
+
+.watch-man{
+    position: absolute;
+    left: 685px;
+    top: 390px;
+    width: 220px;
+    height: 432px;
+    z-index: 20;
+    background: url(../images/doorman.png);
+}
