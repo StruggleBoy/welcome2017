@@ -75,6 +75,11 @@ header {
     height: 100%;
     color: #000;
     font-size: 20px;
+    transition: color 1s;
+}
+
+.banner li.clicked a {
+    color: #fff;
 }
 
 .header2 {
@@ -315,7 +320,7 @@ header {
     }
 
     25% {
-        transform: translate(0, 20px)
+        transform: translate(0, 30px)
     }
 
     50% {
@@ -323,7 +328,7 @@ header {
     }
     
     75% {
-        transform: translate(0, -20px)
+        transform: translate(0, -30px)
     }
     to {
         transform: translate(0, 0)
@@ -336,7 +341,7 @@ header {
     }
 
     25% {
-        transform: translate(0, -20px)
+        transform: translate(0, -30px)
     }
 
 
@@ -345,7 +350,7 @@ header {
     }
     
     75% {
-        transform: translate(0, 20px)
+        transform: translate(0, 30px)
     }
     to {
         transform: translate(0, 0)
@@ -545,7 +550,7 @@ header {
 
 
 
- .boy {
+.boy {
     width: 250px;
     height: 320px;
     background: url(../images/boy.png) no-repeat;
