@@ -75,7 +75,7 @@ header {
     height: 100%;
     color: #000;
     font-size: 20px;
-    transition: color 1s;
+    transition: color 0.8s;
 }
 
 .banner li.clicked a {
@@ -198,8 +198,8 @@ header {
 
 .timeBar{
     position: absolute;
-    top: 405px;
-    left: 232px;
+    top: 100px;
+    left: 40px;
     width: 460px;
     height: 68px;
     transform: rotate(3.8deg);
