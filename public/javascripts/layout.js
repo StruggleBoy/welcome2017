@@ -33,8 +33,10 @@ function showTime(a, div) {
     $('.' + div + 'S').css('backgroundPosition', "40%" + yS +"%");
 }
 
-window.setInterval("leftTimer(2017,9,14,0,0,0)", 1000);
-
+// window.setInterval("leftTimer(2017,9,14,0,0,0)", 1000);
+setTimeout(function() {
+    window.setInterval("leftTimer(2017,9,14,0,0,0)", 1000);  
+}, 600);
 
 
 // })
@@ -52,7 +54,7 @@ function clickEvent() {
     }
 }
 
-//开场小人动画，加一个class，实际上是animation控制
+//开场小人动画 + 走到重邮去追梦，加一个class，实际上是animation控制
 function moveIn() {
     $('.boy').animate({top: '140px'}, 1000 ).animate({top: '100'}, 1000)
 }
@@ -60,10 +62,21 @@ function moveIn() {
 function bird() {
     $('.bird').animate({left: '+=1000px', bottom: '+=240px'}, 2000)
 }
+function cquptMove() {
+    $('.cqupt-dream').css('top','10px');
+}
 
 $(function () {
     clickEvent()
     moveIn()
     bird()
+    cquptMove();
 })
 
+//返回顶部
+
+
+$('.backTop').click(function() {
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:0},500);
+})
