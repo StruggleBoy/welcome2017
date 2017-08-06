@@ -1,0 +1,148 @@
+/*1167 × 1274*/
+.training-banner {
+    position: relative;
+    width: 1300px;
+    height: 1400px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    background: url(../images/training/backOut.png);
+}
+
+.training-main{
+    width: 1080px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.training-nav {
+    overflow: hidden;
+}
+
+
+button.training-btn {
+    float: left;
+    width: 205px;
+    height: 80px;
+    margin: 15px;
+    box-shadow: -4px 4px 2px #f4d694,4px 0 2px #f4d694,-8px 8px 3px #ffbf1d;
+    text-align: center;
+    line-height: 80px;
+    background-color: #f1ffe6;
+    color: #f9a447;
+}
+
+.training-nav button:first-child{
+    margin-left: 90px;
+}
+
+button.training-btn:hover{
+    background-color: #ff8756;
+    box-shadow: -1px 1px 10px #ffffff,5px -5px 0px #fe6e34;
+    color: #ffffff;
+}
+
+.training-cont {
+    height: 920px;
+    width: 1030px;
+    margin-right: 12px;
+    float: right;
+}
+
+.show{
+    width: 100%;
+    overflow: hidden;
+}
+
+div.show .tips{
+    background: url(../images/training/tips_05.png);
+    display: none;
+}
+
+div.show .vedio{
+    background: url(../images/training/bac_05.png);
+    display: none;
+}
+
+div.show .mein{
+    background: url(../images/training/mein_05.png);
+    display: none;
+}
+
+div.show .song{
+    background: url(../images/training/bac_05.png);
+    display: none;
+}
+
+
+.banner-wrapper{
+    overflow: hidden;
+    width: 400%;
+    margin-left: -300%;
+}
+
+.training-tip-nav ul{
+    margin-top: 25px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.training-tip-nav ul li{
+    float: left;
+    height: 68px;
+    width: 25%;
+    text-align: center;
+    line-height: 73px;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+
+.training-tip-nav ul li:first-child{
+    margin-left: 136px;
+}
+
+.training-tip-nav ul li span{
+    color: #50b102;
+    cursor: pointer;
+}
+
+.training-tip-nav ul li:hover{
+    color: #f6a431;
+}
+
+.training-tip-content {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+
+.training-tip-nav span:hover{
+    color: #ff8d13;
+}
+
+.content-wrapper{
+    height: 100%;
+    width: 300%;
+}
+
+.content-item{
+    height: 100%;
+    width: 33.33%;
+    float: left;
+}
+
+.underline-wrapper{
+    position: relative;
+    height: 5px;
+    width: 100%;
+}
+
+.underline{
+    position: absolute;
+    left: 21.5%;
+    width: 88px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #ff8d13;
+}
+
+
