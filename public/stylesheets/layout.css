@@ -118,8 +118,14 @@ header {
     width: 1000px;
     height: 738px;
     margin: 70px auto 0;
-    /*overflow: hidden;*/
+    z-index: 10;
     background: url(../images/car-background.png) no-repeat 200px 490px;
+ }
+ .car-mask {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: 10;
  }
 .cqupt-dream {
     position: absolute;

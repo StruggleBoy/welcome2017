@@ -6,12 +6,27 @@
     margin: 0 auto;
     margin-bottom: 150px;
     background: url(../images/training/backOut.png);
+    overflow: hidden;
 }
 
 .training-main{
     width: 1080px;
     margin: 0 auto;
     padding-top: 200px;
+    overflow: hidden;
+}
+
+.mask-appear {
+    position: absolute;
+    top: 159px;
+    left: 154px;
+    width: 1000px;
+    height: 1115px;
+    background: url(../images/mask.png);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: none;
+    z-index: 2;
 }
 
 .training-nav {
@@ -66,6 +81,7 @@ div.show .vedio{
 div.show .mein{
     background: url(../images/training/mein_05.png);
     display: none;
+    overflow: hidden;
 }
 
 div.show .song{
@@ -177,28 +193,48 @@ div.show .song{
 
 .train-name {
     width: 208px;
-    height: 57px;
-    margin: 52px auto 20px auto;
-    background-color: skyblue;
+    height: 41px;
+    margin: 52px auto 0px auto;
 }
-
+.arrow-left {
+    width: 28px;
+    height: 41px;
+    float: left;
+    background: url(../images/training/arrow-left.png);
+}
+.arrow-center {
+    height: 41px;
+    width: 152px;
+    line-height: 41px;
+    color: #ffb600;
+    font-size: 26px;
+    text-align: center;
+    float: left;
+}
+.arrow-right {
+    width: 28px;
+    height: 41px;
+    float: left;
+    background: url(../images/training/arrow-right.png);    
+}
 
 
 .training-mien {
     position: relative;
     width: 923px;
-    height: 765px;
+    height: 800px;
     /*margin: 0px auto;*/
     margin: 0px 0px 0px 30px;
     overflow: hidden;
 }
 .mien-image {
     width: 923px; 
-    float: left;
+    /*float: left;*/
     overflow: hidden;     
     position: absolute;
     top: 0;
     right: 0;
+    /*z-index:-1;*/
 }
 .mien-image ul{
     list-style: none;
@@ -210,7 +246,7 @@ div.show .song{
     height: 227px;
     background-image: url(../images/training/train-mien-1.png);
     float: left;
-    margin: 0 5px 49px 27px;
+    margin: 30px 5px 19px 27px;
 }
 .mien-image ul li:hover .train-mask{
     cursor: pointer;
@@ -238,16 +274,15 @@ div.show .song{
 100% {opacity: 1;}/*结束状态 透明度为1*/  
 }  
 .bigger {
-    width: 927px;
+    width: 918px;
     height: 814px;
     position: absolute;
-    /*top: -80px;*/
-    /*display: none;*/
-    left: 0;
+    left: 185px;
     top: -820px;
     transition: top 1s;
-    /*background-color: red;*/
     border-radius: 50px;
+    background-color: white;
+    z-index: 2;
 }
 
 
@@ -257,23 +292,25 @@ div.show .song{
     position: absolute;
     top: 24px;
     right: 27px;
-    background-color: skyblue;
+    /*background-color: skyblue;*/
+    background: url(../images/training/close.png) no-repeat;
     margin-left: 500px;
+    cursor: pointer;
 }
 .bigger-contain {
     width: 742px;
     height: 728px;
     margin: 85px auto 0 auto;
     background-color: white;
-    
+    border-radius: 30px;    
 }
 .bigger-contain-image {
     width: 742px;
-    background-color: skyblue;
+    background: url(../images/training/trainPhoto.png);
     height: 530px;
 }
 .bigger-contain h2 {
-    line-height: 92px;
+    line-height: 60px;
     text-align: center;
 }
 
@@ -285,16 +322,10 @@ div.show .song{
     height: 100%;
     float: left;
     position: absolute;
-    /*transform: rotate(10deg);*/
     top: 0;
     right: 0;
     background-color: green;
 }
-/*.mien-image ul li .brighting{*/
-    /*position: absolute;
-    background: url(./x.png);
-    width: */
-/*}*/
 .bar {
     background-color: red;
     width: 100%;
