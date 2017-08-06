@@ -22,3 +22,61 @@ $(function(){
 })
 
  
+
+var box = document.querySelector(".training-mien"); 
+var content = document.querySelector(".mien-image");
+var bar = document.querySelector(".bar");
+var smallBox = document.querySelector('.mien-right');
+
+console.log(content.scrollHeight);
+var propH = box.offsetHeight / content.scrollHeight * smallBox.offsetHeight;
+if (content.scrollHeight > box.offsetHeight) {
+    bar.style.height = propH + "px";
+} else {
+    bar.style.height = 0;
+}
+bar.onmousedown = function (e) {
+    var e = e || window.event;
+    var  pagey = e.pageY + document.documentElement.scrollTop;
+    var  ponity = pagey - box.offsetTop-bar.offsetTop;
+    // console.log(pagey);
+    document.onmousemove  = function (e) {
+        event.preventDefault();
+        var  e = e || window.event;
+        var  pagey = e.pageY || e.clientY + document.documentElement.scrollTop;
+        var  y = pagey - box.offsetTop -ponity;
+        if (y<0) {
+            y =0;
+        }
+        if (y > smallBox.offsetHeight-bar.offsetHeight) {
+            y = smallBox.offsetHeight-bar.offsetHeight;
+        }
+        bar.style.top = y + "px";
+        var  prop = content.scrollHeight / smallBox.offsetHeight;
+        var  bigL = y * prop;
+        content.style.top = -bigL + "px";
+    }
+}
+document.onmouseup = function () {
+    document.onmousemove = null;
+}
+
+
+
+//
+
+var lists = document.querySelectorAll('.mien-image ul li'),
+    bigger = document.querySelector('.bigger'),
+    train_images = document.querySelector('.bigger-contain-image');
+
+    for(let i = 0 ;i < lists.length ; i++) {
+        lists[i].addEventListener('click',function() {
+            bigger.style.top = '0px';            
+            train_images.style.backgroundImage = lists[i].style.backgroundImage;            
+        })
+    }
+
+    var close = document.querySelector('.bigger-close');
+        close.addEventListener('click',function() {
+            bigger.style.top = '-820px';                                  
+        })

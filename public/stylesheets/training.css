@@ -175,4 +175,135 @@ div.show .song{
     font-size: 16px;
 }
 
+.train-name {
+    width: 208px;
+    height: 57px;
+    margin: 52px auto 20px auto;
+    background-color: skyblue;
+}
 
+
+
+.training-mien {
+    position: relative;
+    width: 923px;
+    height: 765px;
+    /*margin: 0px auto;*/
+    margin: 0px 0px 0px 30px;
+    overflow: hidden;
+}
+.mien-image {
+    width: 923px; 
+    float: left;
+    overflow: hidden;     
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mien-image ul{
+    list-style: none;
+    overflow: hidden;
+}
+.mien-image ul li{
+    float: left;
+    width: 267px;
+    height: 227px;
+    background-image: url(../images/training/train-mien-1.png);
+    float: left;
+    margin: 0 5px 49px 27px;
+}
+.mien-image ul li:hover .train-mask{
+    cursor: pointer;
+    display: block;
+}
+
+.train-mask {
+    width: 267px;
+    height: 227px;
+    background: rgba(100,100,100,.3);
+    display: none;
+    animation: fade-in 1s;
+} 
+@keyframes fade-in {  
+0% {opacity: 0;}/*初始状态 透明度为0*/  
+10%{opacity: 0.1;}
+20%{opacity: 0.2;}
+30%{opacity: 0.3;}
+40%{opacity: 0.4;}
+50%{opacity: 0.5;}
+60%{opacity: 0.6;}
+70%{opacity: 0.7;}
+80%{opacity: 0.8;}
+90% {opacity: 0.9;}/*过渡状态 透明度为0*/  
+100% {opacity: 1;}/*结束状态 透明度为1*/  
+}  
+.bigger {
+    width: 927px;
+    height: 814px;
+    position: absolute;
+    /*top: -80px;*/
+    /*display: none;*/
+    left: 0;
+    top: -820px;
+    transition: top 1s;
+    /*background-color: red;*/
+    border-radius: 50px;
+}
+
+
+.bigger-close{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 24px;
+    right: 27px;
+    background-color: skyblue;
+    margin-left: 500px;
+}
+.bigger-contain {
+    width: 742px;
+    height: 728px;
+    margin: 85px auto 0 auto;
+    background-color: white;
+    
+}
+.bigger-contain-image {
+    width: 742px;
+    background-color: skyblue;
+    height: 530px;
+}
+.bigger-contain h2 {
+    line-height: 92px;
+    text-align: center;
+}
+
+
+
+
+.mien-right {
+    width: 14px;
+    height: 100%;
+    float: left;
+    position: absolute;
+    /*transform: rotate(10deg);*/
+    top: 0;
+    right: 0;
+    background-color: green;
+}
+/*.mien-image ul li .brighting{*/
+    /*position: absolute;
+    background: url(./x.png);
+    width: */
+/*}*/
+.bar {
+    background-color: red;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+    /*transform: rotate(10deg);*/
+}
+.bar:hover {
+    cursor: pointer;
+}
