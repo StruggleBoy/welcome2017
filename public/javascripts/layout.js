@@ -1,13 +1,4 @@
 
-
-// $(function () {
-    //计算剩余时间
-
-var days,
-    hours,
-    minutes,
-    seconds;
-
 function leftTimer(year, mon, days, hours, minutes, seconds) {
     var leftTime = (new Date(year, mon - 1, days, hours, minutes, seconds)) - (new Date());
         days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10);
@@ -18,6 +9,7 @@ function leftTimer(year, mon, days, hours, minutes, seconds) {
         showTime(hours,'hours');
         showTime(minutes,'min');
         showTime(seconds,'sec');
+        setTimeout("leftTimer(2017,9,14,0,0,0)", 1000)
 }
 
 //用图标显示剩余时间
@@ -33,11 +25,16 @@ function showTime(a, div) {
     $('.' + div + 'S').css('backgroundPosition', "40%" + yS +"%");
 }
 
-window.setInterval("leftTimer(2017,9,14,0,0,0)", 1000);
+function timeGo() {
+    //计算剩余时间
 
+var days,
+    hours,
+    minutes,
+    seconds;
+    leftTimer(2017,9,14,0,0,0)
 
-
-// })
+}
 
 
 // 导航栏特效
@@ -52,7 +49,7 @@ function clickEvent() {
     }
 }
 
-//开场小人动画，加一个class，实际上是animation控制
+//开场小人动画 + 走到重邮去追梦，加一个class，实际上是animation控制
 function moveIn() {
     $('.boy').animate({top: '140px'}, 1000 ).animate({top: '100'}, 1000)
 }
@@ -60,10 +57,23 @@ function moveIn() {
 function bird() {
     $('.bird').animate({left: '+=1000px', bottom: '+=240px'}, 2000)
 }
+function cquptMove() {
+    $('.cqupt-dream').css('top','10px');
+}
 
 $(function () {
     clickEvent()
     moveIn()
     bird()
+    cquptMove();
+
+    timeGo()
 })
 
+//返回顶部
+
+
+$('.backTop').click(function() {
+       var sc=$(window).scrollTop();
+       $('body,html').animate({scrollTop:0},500);
+})

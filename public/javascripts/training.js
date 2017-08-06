@@ -11,7 +11,6 @@ $(function(){
     $('.training-tip-nav').find("span").click(function() {
         var num = $(this).parent().index();
         var _marginLeft = num * (-100);
-        console.log(num);
         $('.content-wrapper').animate({marginLeft: _marginLeft + "%"}, 500)
     });
     // 点击TAB
@@ -22,3 +21,4 @@ $(function(){
     })
 })
 
+ 

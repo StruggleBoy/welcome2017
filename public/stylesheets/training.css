@@ -54,13 +54,13 @@ button.training-btn:hover{
 }
 
 div.show .tips{
-    background: url(../images/training/tips_05.png);
+    background: url(../images/training/main_05.png);
     display: none;
 }
 
 div.show .vedio{
     background: url(../images/training/bac_05.png);
-    display: none;
+    display: show;
 }
 
 div.show .mein{
@@ -122,12 +122,19 @@ div.show .song{
 .content-wrapper{
     height: 100%;
     width: 300%;
+    overflow: hidden;
 }
 
 .content-item{
     height: 100%;
     width: 33.33%;
     float: left;
+}
+
+.item-wrapper{
+    margin-left: 100px;
+    width: 80%;
+    padding: 20px;
 }
 
 .underline-wrapper{
@@ -143,6 +150,29 @@ div.show .song{
     height: 5px;
     border-radius: 3px;
     background-color: #ff8d13;
+}
+
+.item-wrapper span{
+    display: inline-block;
+    height: 620px;
+    overflow: auto;
+}
+
+.item-wrapper h3,h2,h1{
+    color: #fa9062;
+}
+
+.item-wrapper h2{
+    margin-left: 190px;
+    margin-bottom: 50px;
+}
+
+.item-wrapper p{
+    color: #fea93e;
+    padding-right: 20px;
+    font-family: "weiruanyahei";
+    line-height: 50px;
+    font-size: 16px;
 }
 
 
