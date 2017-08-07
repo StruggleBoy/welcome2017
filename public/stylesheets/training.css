@@ -193,8 +193,8 @@ div.show .song{
 
 .training-mien {
     position: relative;
-    width: 923px;
-    height: 900px;
+    width: 930px;
+    height: 800px;
     margin: 0px 0px 0px 30px;
     overflow: hidden;
 }
@@ -331,15 +331,17 @@ div.show .song{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: green;
+    background-color:#b3f0ea;
+    border-radius: 5px;
 }
 
 .bar {
-    background-color: red;
+    background-color:#ff9164;
     width: 100%;
     position: absolute;
     top: 0;
     cursor: pointer;
+    border-radius: 5px;
     left: 0;
     /*transform: rotate(10deg);*/
 }

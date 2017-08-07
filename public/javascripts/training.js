@@ -32,9 +32,6 @@ function showScroll() {
     var bar = document.querySelector(".bar");
     var smallBox = document.querySelector('.mien-right');
 
-    console.log(box.offsetHeight);
-    console.log(smallBox.offsetHeight);
-    console.log(content.scrollHeight);
     var propH = box.offsetHeight / content.scrollHeight * smallBox.offsetHeight;
     if (content.scrollHeight > box.offsetHeight) {
         bar.style.height = propH + "px";
@@ -42,26 +39,25 @@ function showScroll() {
         bar.style.height = 0;
     }
     var index = 1;
-    var k = (box.offsetHeight - bar.offsetHeight) / (content.scrollHeight - box.offsetHeight);
+    var k = box.offsetHeight / content.offsetHeight;
     box.addEventListener('mousewheel',function(e) {
-        // console.log(123);
         e.preventDefault(); 
-        if(content.offsetTop <= 0 && content.offsetTop >= -(content.offsetHeight - box.offsetHeight)){
-            if(e.wheelDelta < 0) {
-                index += index;
-                bar.style.top = index * k + 'px';
-                content.style.top = -(index + content.offsetTop) + 'px';
-            }else{
-                index = index - 10;
-                bar.style.top = index * k + bar.offsetTop + 'px';
-                content.style.top = -(index + content.offsetTop) + 'px';                 
-            }
-        }       
+        if(e.wheelDelta < 0) {
+            index = index + 30;
+            bar.style.top = (index + content.offsetTop) * k + 'px';
+            content.style.top = -(index + content.offsetTop) + 'px';
+        }else{
+            index = index - 30;
+            bar.style.top = (index + content.offsetTop) * k + 'px';
+            content.style.top = -(index + content.offsetTop) + 'px';                 
+        }
         if(content.offsetTop > 0) {
+            bar.style.top = 0;            
             content.style.top = 0;
         }
         if(content.offsetTop < -(content.offsetHeight - box.offsetHeight)) {
             content.style.top = -(content.offsetHeight - box.offsetHeight) + 'px';
+            bar.style.top = k * (content.offsetHeight - box.offsetHeight) + 'px';
         }
     })
 
