@@ -17,16 +17,15 @@
 }
 
 .mask-appear {
-    position: absolute;
-    top: 159px;
-    left: 154px;
-    width: 1000px;
-    height: 1115px;
-    background: url(../images/mask.png);
+    position: fixed;
+    width: 100%;
+    height: 168%;
+    /*background: url(../images/mask.png);*/
+    background: rgba(100,100,100,.4);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     display: none;
-    z-index: 2;
+    z-index: 300;
 }
 
 .training-nav {
@@ -155,6 +154,73 @@ div.show .song{
     padding: 20px;
 }
 
+
+
+
+
+.know {
+    width: 845px;
+}
+
+
+.know::-webkit-scrollbar {  
+    width: 12px;  
+    background-color:#9eeae2;
+}  
+   
+/* Track */  
+.know::-webkit-scrollbar-track {  
+    -webkit-box-shadow: inset 0 0 6px #9eeae2;   
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+}  
+   
+/* Handle */  
+.know::-webkit-scrollbar-thumb {  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+    background: #ff9062;   
+    -webkit-box-shadow: inset 0 0 6px #9eeae2;   
+}  
+.know::-webkit-scrollbar-thumb:window-inactive {  
+    background: #9eeae2;
+} 
+
+
+
+.jilv {
+    width: 845px;
+}
+
+
+.jilv::-webkit-scrollbar {  
+    width: 12px;  
+    background-color:#9eeae2;
+}  
+   
+/* Track */  
+.jilv::-webkit-scrollbar-track {  
+    -webkit-box-shadow: inset 0 0 6px #9eeae2;   
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+}  
+   
+/* Handle */  
+.jilv::-webkit-scrollbar-thumb {  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+    background: #ff9062;   
+    -webkit-box-shadow: inset 0 0 6px #9eeae2;   
+}  
+.jilv::-webkit-scrollbar-thumb:window-inactive {  
+    background: #9eeae2;
+} 
+
+
+
+
+
+
 .underline-wrapper{
     position: relative;
     height: 5px;
@@ -196,19 +262,20 @@ div.show .song{
 .training-mien {
     position: relative;
     width: 923px;
-    height: 900px;
-    margin: 0px 0px 0px 30px;
+    height: 870px;
+    margin: 40px 0px 0px 40px;
     overflow: hidden;
+    border-radius: 20px;
 }
 .mien-image {
     width: 923px; 
     overflow: hidden;     
     position: absolute;
     top: 0;
-    right: 0;
+    right: -10px;
 }
 .mien-image ul{
-    margin-top: 50px;
+    margin-top: 0px;
     padding-left: 10px;
     list-style: none;
     overflow: hidden;
@@ -220,9 +287,9 @@ div.show .song{
     width: 266px;
     height: 225px;
     background-image: url(../images/training/train-mien-1.png);
-    margin: 30px 5px 19px 27px;
+    margin: 0px 5px 49px 20px;
     overflow: hidden;
-
+    cursor: pointer;
 }
 
 .mien-image ul li:hover .train-mask{
@@ -249,6 +316,7 @@ div.show .song{
     position: absolute;
     left: 68px;
     top: 170px;
+    transition: top 0.7s;
     width: 130px;
     height: 65px;
     border-radius: 65px 65px 0 0;
@@ -291,7 +359,7 @@ div.show .song{
     transition: top 1s;
     border-radius: 50px;
     background-color: white;
-    z-index: 2;
+    z-index: 301;
 }
 
 

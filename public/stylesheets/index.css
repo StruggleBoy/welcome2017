@@ -59,9 +59,18 @@
     position: relative;
     width: 1200px;
     height: 760px;
-    background: url(../images/map-box.png) no-repeat;
     margin-bottom: 94px;
     background-position: -30px -20px;
+}
+
+.map-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1200px;
+    height: 760px;
+    background: url(../images/map-box.png) no-repeat; 
+    z-index: 2;   
 }
 
 .training {
