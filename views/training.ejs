@@ -1,4 +1,6 @@
 <!--  军训专题 -->
+<link href="http://vjs.zencdn.net/6.2.4/video-js.css" rel="stylesheet">
+
 <link rel="stylesheet" href="./stylesheets/training.css">
 <link rel="stylesheet" href="./stylesheets/index.css">
 <div class="training-banner">
@@ -14,10 +16,29 @@
         </div>
         <div class="show">
             <div class="training-cont vedio" >
-                <div class="title">
-                    <div></div>
-                    <div></div>
-                </div>
+                 <div class="allVideo">
+                    <div class="players">
+                        <video id="video1" class="video-js vjs-big-play-centered" >
+                            <source src="http://125.39.52.240/vhot2.qqvideo.tc.qq.com/ALAEfDsu5pctkKe-REXHkW7CV98C9D8dkkC7oCq251bU/f0526oi2zyx.p701.1.mp4?sha=6335A28393DA5C29D39A8DFBED6452D3512C1B29&sdtfrom=v1010&guid=e1bc12579ff9668a9464a28ae3e508e1&vkey=3EBF1E433332B4E2422FC806123CE12A3C054983B161222A651801B92307690F4D178C71DBCE311DB5F33670C0397AD02247FE923BF83A280DDB7D58EADA3862ED2FFFAD58CA69714A9D5FE96EDEF6EF873D8ECDDA8DC3BE91DC3576E0163A93B848F2564D786A840A09F8754DFB2D17A643F643F9F515D9&platform=2&ocid=2507176202"  type='video/mp4'> 
+                        </video>
+                    </div>
+                    <div class="allImage">
+                        <div class="images">
+                            <div class='sImg1 sImg' c-src='http://vv.chinamil.com.cn/asset/category3/2017/07/21/asset_287609.mp4'>
+                                <div class="cover">来吧，“飞阅”大学生军训</div>
+                            </div>
+                            <div class='sImg2 sImg focus' c-src='http://125.39.52.240/vhot2.qqvideo.tc.qq.com/ALAEfDsu5pctkKe-REXHkW7CV98C9D8dkkC7oCq251bU/f0526oi2zyx.p701.1.mp4?sha=6335A28393DA5C29D39A8DFBED6452D3512C1B29&sdtfrom=v1010&guid=e1bc12579ff9668a9464a28ae3e508e1&vkey=3EBF1E433332B4E2422FC806123CE12A3C054983B161222A651801B92307690F4D178C71DBCE311DB5F33670C0397AD02247FE923BF83A280DDB7D58EADA3862ED2FFFAD58CA69714A9D5FE96EDEF6EF873D8ECDDA8DC3BE91DC3576E0163A93B848F2564D786A840A09F8754DFB2D17A643F643F9F515D9&platform=2&ocid=2507176202'>
+                                <div class="cover" style='top: 125px;height: 40px'>16级学生军训回顾</div>
+                            </div>
+                            <div class='sImg3 sImg'c-src='http://111.30.138.81/vhot2.qqvideo.tc.qq.com/ALV1B-rr7k6k7JqFfH3gOtr1Atg2StGiH1pFKlTn15os/p0522eqzqzz.p701.1.mp4?sha=424E8E75594B1D40553745E987A7D392F9104977&sdtfrom=v1010&guid=e1bc12579ff9668a9464a28ae3e508e1&vkey=D648299E72DFE1D86E4C9303794FE474B8CB34147CF1D0362EA0953EE072AF9660E3155B4B062339010016225D99F0CD70DCE8DE48E33FCA3F47FAA4412A8505B2B8261EF01312A8999DBE8A4C441F9A6C237D6E9192859A0FE58AAD4DB85CE0081B3B890EF067D0E0BC13410E009916160D65B6876199A1&platform=2&ocid=1214412810'>
+                                <div class="cover">16级学生军训纪实</div>
+                            </div>
+                            <div class='sImg4 sImg'c-src='http://123.151.41.20/vhot2.qqvideo.tc.qq.com/AuBVqQdow-XxL06DP0IPNOmSgreK2rznYd8C4xsvcWdA/y05217ocwjk.p701.1.mp4?sha=BFEDFA709814CD228727C3650602DE3F97C8FB23&sdtfrom=v1010&guid=e1bc12579ff9668a9464a28ae3e508e1&vkey=E5C1AD96FDFA8E3E32F1432754FC9EF71F3E9711DD3D1D0F618BE129CEB5D14E5195B85CF266CF40DC9DC1106289C4555BC41D27AA19E944EAD5C8803FC181242EC3F049B13197F41287E9D7C0785FEB666A620CD86E7AAF2F86404FCEE743DFE5796D68C63D090992F7C5636D3EBBAB0860F9D05B8C6A08&platform=2&ocid=1618473226'>
+                                <div class="cover">16级学生军训快闪</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
             <div class="training-cont tips" >
                 <div class="training-tip-nav">
@@ -276,9 +297,9 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="mien-right">
+                    <div class="mien-right">
                         <div class="bar"></div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="training-cont song" >
@@ -286,3 +307,73 @@
         </div>
     </div>
 </div>
+<script src="http://vjs.zencdn.net/6.2.4/video.js"></script>
+<script>
+    
+$(function() {
+
+
+var options = {
+    poster: './images/big.png',
+    controls: 'control',
+    preload: 'none',
+    width: '856',
+    height: '482',
+    controlBar: {
+        children: [
+            {
+                name: 'playToggle'
+            },
+            {
+                name: 'progressControl'
+            },
+            {
+                name: 'currentTimeDisplay'
+            },
+            {
+                name: 'timeDivider',
+            },
+            {
+                name: 'durationDisplay'
+            },
+            {
+                name: 'volumePanel',
+                inline: false,
+            },
+            {
+                name: 'fullscreenToggle'
+            },
+        ]
+    }
+};
+
+    var player1 = videojs('video1', options);
+
+    let $video = $('.vjs-tech')
+
+    $('.sImg').click(function () {
+    let $cover = $(this).children()
+    if ($(this).hasClass('focus')) {
+        //点击正在播放的视频的缩略图,什么都不做
+        return
+    }
+    else {
+        //点击未播放的视频的缩略图
+        //切换样式
+        $cover.animate({top: "125", height: "40"}, 1000)
+        $(".focus").children().animate({top: "0", height: "165"}, 1000)
+        $(".focus").removeClass("focus")
+        $(this).addClass('focus')
+        //获取待切换视频的source
+        let src = $(this).attr('c-src')
+        //进行视频的切换
+        player1.pause()
+        $video.attr('src', src)
+        player1.load()
+        player1.play()
+        
+        }
+    })
+})
+
+</script>
