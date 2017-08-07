@@ -19,37 +19,40 @@ $(function(){
         $('.training-cont').hide();
         $('.' + $(this).attr('ref')).fadeIn('500');
         if($('.mein').css('display') === 'block') {
-            showScroll();
+            showScroll(content,bar,smallBox,box)
         }
     })
 })
 
  
+var box = document.querySelector(".training-mien"); 
+var content = document.querySelector(".mien-image");
+var bar = document.querySelector(".bar");
+var smallBox = document.querySelector('.mien-right');
 
-function showScroll() {
-    var box = document.querySelector(".training-mien"); 
-    var content = document.querySelector(".mien-image");
-    var bar = document.querySelector(".bar");
-    var smallBox = document.querySelector('.mien-right');
 
+function showScroll(content,bar,smallBox,box) {
     var propH = box.offsetHeight / content.scrollHeight * smallBox.offsetHeight;
     if (content.scrollHeight > box.offsetHeight) {
         bar.style.height = propH + "px";
     } else {
         bar.style.height = 0;
     }
-    var index = 1;
+    // var index = 1;
+    var tmp = 10;
     var k = box.offsetHeight / content.offsetHeight;
     box.addEventListener('mousewheel',function(e) {
         e.preventDefault(); 
         if(e.wheelDelta < 0) {
-            index = index + 30;
-            bar.style.top = (index + content.offsetTop) * k + 'px';
-            content.style.top = -(index + content.offsetTop) + 'px';
+            // index = index + 5;
+            // bar.style.transition = 'top 0.05s';
+            bar.style.top = -(-tmp + content.offsetTop) * k + 'px';
+            content.style.top = (-tmp + content.offsetTop) + 'px';
         }else{
-            index = index - 30;
-            bar.style.top = (index + content.offsetTop) * k + 'px';
-            content.style.top = -(index + content.offsetTop) + 'px';                 
+            // bar.style.transition = 'top 0.05s';
+            // index = index - 5;
+            bar.style.top = -(tmp + content.offsetTop) * k + 'px';
+            content.style.top = (tmp + content.offsetTop) + 'px';                 
         }
         if(content.offsetTop > 0) {
             bar.style.top = 0;            

@@ -1,4 +1,6 @@
 $(function () {
+
+    
     var conterWidth = $('.conter').innerWidth(),
     conterHeight = $('.conter').innerHeight(),
 
@@ -8,36 +10,40 @@ $(function () {
     $small = $('.small'),
     ImgWidth = $Img.innerWidth(),
     ImgHeight = $Img.innerHeight(),
-    x = 1.6 * ImgWidth,
+    x = 2.0 * ImgWidth,
     y = ImgWidth;
 // console.log($dragImg);
-$('.dragImg').on('mousedown',function(e) {
+$('.map-container').on('mousedown',function(e) {
     event.preventDefault();        
     var startX = e.pageX,
     startY = e.pageY,
-    startL = $(this).position().left,
-    startT = $(this).position().top,
+    startL = $('.dragImg').position().left,
+    startT = $('.dragImg').position().top,
     X = ImgWidth - conterWidth,
     Y = ImgHeight - conterHeight,
     oL = $('.conter').offset().left,
     oT = $('.conter').offset().top;
     var L,T,onX,onY;
-    $(this).on('mousemove',function(e) {
+    console.log(startX);
+    $(document).on('mousemove',function(e) {
+        event.preventDefault();                       
         onX = e.pageX;
         onY = e.pageY;
+        console.log(onX);
         L = onX - startX + startL;
         T = onY - startY + startT;
-        $(this).css('top',T + 'px');
-        $(this).css('left',L + 'px');
+        
+        $('.dragImg').css('top',T + 'px');
+        $('.dragImg').css('left',L + 'px');
         if(L > 0) {
-            $(this).css('left',0);
+            $('.dragImg').css('left',0);
         }else if(L < -X) {
-            $(this).css('left',-X + 'px');                    
+            $('.dragImg').css('left',-X + 'px');                    
         }
         if(T > 0) {
-            $(this).css('top',0);              
+            $('.dragImg').css('top',0);              
         }else if(T < -Y) {
-            $(this).css('top', -Y + 'px');                              
+            $('.dragImg').css('top', -Y + 'px');                              
         }
         if((onX < (oL + 8)) || (onX > (oL + conterWidth - 15))) {
             $(this).unbind('mousemove');
@@ -46,23 +52,10 @@ $('.dragImg').on('mousedown',function(e) {
             $(this).unbind('mousemove');                
         }
     })
-    $(this).on('mouseup',function() {
+    $(document).on('mouseup',function(e) {
         event.preventDefault();               
-        // $(this).css('left',L + 'px');
-        // $(this).css('top',T + 'px');
         $(this).unbind('mousemove');
-        setTimeout(function() {
-        if(L > 0) {
-            $(this).css('left',0);    
-        }else if(L < -X) {
-            $(this).css('left',-X + 'px');                    
-        }
-        if(T > 0) {
-            $(this).css('top',0);              
-        }else if(T < -Y) {
-            $(this).css('top', -Y + 'px');                              
-        }
-        }, 200)
+        console.log(e.pageY);
     })
 })
 
