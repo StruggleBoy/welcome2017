@@ -62,8 +62,6 @@ function cquptMove() {
 }
 // 阴影
 function shadow() {
-    console.log($('.shadow').get(0))
-    // $('.shadow').show(1500)
     $('.shadow').fadeTo(1500, 0.8)
 }
 
