@@ -95,10 +95,6 @@ function showScroll(content,bar,smallBox,box) {
 
 
 
-
-
-//
-
 var lists = document.querySelectorAll('.mien-image ul li'),
     bigger = document.querySelector('.bigger'),
     train_images = document.querySelector('.bigger-contain-image'),
@@ -115,7 +111,6 @@ var lists = document.querySelectorAll('.mien-image ul li'),
 var close = document.querySelector('.bigger-close');
     close.addEventListener('click',function() {
         bigger.style.top = '-820px';       
-        maskApear.style.display = 'none';                                   
-    })
-
+        maskApear.style.display = 'none'; 
+    }) 
 
