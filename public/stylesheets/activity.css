@@ -1,0 +1,120 @@
+.activity-banner {
+    width: 1089px;
+    height: 1275px;
+    background: url(../images/activity/activity-banner.png) no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.activity-content {
+    margin: 160px 0 0 85px;
+    width: 950px;
+    height: 1071px;
+}
+
+.activity-nav {
+    height: 140px;
+    width: 950px;
+    line-height: 140px;
+}
+.activity-nav button{
+    height: 85px;
+    width: 251px;
+    line-height: 85px;
+    border-radius: 30px;
+    box-shadow:none; 
+}
+.activity-nav button.btn1{
+    margin-left: 180px;
+    background-color: #effee3;
+    color: #ff962a;       
+    box-shadow: -5px 5px 2px #f4f1ce,5px 2px 2px #f4f1ce,-9px 9px 3px #ffb606;
+}
+
+.activity-nav button.btn2{
+    margin-left: 65px;    
+    color: #ffffff;
+    background-color: #ff9c74; 
+    box-shadow: 3px -3px 1px #fd692b;   
+}
+
+.activity-main {
+    height: 877px;
+    width: 950px;
+    padding-top: 33px;
+    margin-top: -15px;
+    background: url(../images/activity/outline.png) -10px 0px no-repeat;
+}
+.help-center {
+    width: 772px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.help-nav {
+    width: 100%;
+    overflow: hidden;
+}
+
+.help-nav button{
+    line-height: 65px;
+    font-size: 20px;
+    color: #6bc125;
+    padding:0 32px;
+}
+.content-help {
+    position: relative;
+    left: 0;
+    width: 600%;
+    height: 680px;
+    transition: left 0.8s;
+}
+.content-help ul {
+    height: 100%;
+}
+.content-help li {
+    width: 16.66%;
+    height: 100%;
+    float: left;
+    background-color: skyblue;
+}
+.help-underline {
+    position: relative;
+    left: 0px;
+    background-color: #ff8d13;
+    width: 100px;
+    border-radius: 2px;
+    height: 5px;
+    transition: left 0.8s;
+}
+
+.welcome {
+    margin: -20px 0 0 -10px;
+    width: 971px;
+    height: 939px;
+    background: url(../images/activity/welcomeStudent.png) no-repeat;
+    display: block;
+}
+
+.smile-activity {
+    margin: 0 auto;
+    width: 778px;
+    padding-top: 74px;
+    height: 666px;
+}
+.join-activity {
+    width: 570px;
+    height: 258px;
+    margin: 80px auto;
+    color: #ffa22a;
+}
+.join-activity span {
+    font-weight: bold;
+    color: #fd6b2f;
+    font-size: 16px;
+}
+hr{
+    border: 1px solid #c7eda5;
+    display: none;
+}

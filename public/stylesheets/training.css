@@ -33,6 +33,7 @@
 }
 
 
+
 button.training-btn {
     float: left;
     width: 205px;
@@ -160,12 +161,15 @@ div.show .song{
 
 .know {
     width: 845px;
+    border-radius: 10px;      
 }
 
 
 .know::-webkit-scrollbar {  
     width: 12px;  
     background-color:#9eeae2;
+    border-radius: 10px;      
+    
 }  
    
 /* Track */  
@@ -190,12 +194,15 @@ div.show .song{
 
 .jilv {
     width: 845px;
+    border-radius: 10px;      
+    
 }
 
 
 .jilv::-webkit-scrollbar {  
     width: 12px;  
     background-color:#9eeae2;
+    border-radius: 10px;          
 }  
    
 /* Track */  
