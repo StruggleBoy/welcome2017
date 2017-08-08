@@ -1,6 +1,7 @@
 /*1167 × 1274*/
 .training-banner {
     position: relative;
+    top: -20px;
     width: 1300px;
     height: 1400px;
     margin: 0 auto;
@@ -33,7 +34,7 @@
 }
 
 
-button.training-btn {
+  .training-btn {
     float: left;
     width: 205px;
     height: 80px;
@@ -43,17 +44,17 @@ button.training-btn {
     line-height: 80px;
     background-color: #f1ffe6;
     color: #f9a447;
-}
+}  
 
 .training-nav button:first-child{
     margin-left: 90px;
 }
 
-button.training-btn:hover{
+ .training-btn:hover{
     background-color: #ff8756;
     box-shadow: -1px 1px 10px #ffffff,5px -5px 0px #fe6e34;
     color: #ffffff;
-}
+} 
 
 .training-cont {
     height: 920px;

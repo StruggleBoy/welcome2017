@@ -1,0 +1,176 @@
+.guide-box {
+    position: relative;
+    right: 40px;
+    width: 1100px;
+    height: 1400px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    background: url(../images/guide/guide-box.png) no-repeat;
+    background-position: -30px 0px;
+    overflow: hidden;
+}
+
+.guide-content {
+    width: 970px;
+    height: 1100px;
+      /* background: red;    */
+    position: absolute;
+    right: 25px;
+    bottom: 130px;
+} 
+
+.allButtons {
+    width: 950px;
+    margin-left: 20px;
+    height: 200px;
+}
+
+.guide-btn {
+    float: left;
+    width: 202px;
+    height: 80px;
+    margin: 15px 15px;
+    box-shadow: -4px 4px 2px #f4d694,4px 0 2px #f4d694,-8px 8px 3px #ffbf1d;
+    text-align: center;
+    line-height: 80px;
+    background-color: #f1ffe6;
+    color: #f9a447;
+    cursor: pointer;
+    transition: background-color 2s, box-shadow 2s, color 0.5s;
+}
+.btn-clicked {
+    background-color: #ff8756;
+    box-shadow: -1px 1px 10px #ffffff,5px -5px 0px #fe6e34;
+    color: #ffffff;
+}
+
+.allDivs {
+    width: 970px;
+    height: 870px;
+    margin-top: 30px;
+    
+}
+
+.qq {
+    width: 100%;
+    height: 100%;
+    background: url(../images/guide/qq.png) no-repeat; 
+    background-position: 10px 0px;
+    position: relative;
+}
+
+.qq-content {
+    width: 850px;
+    height: 760px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    overflow-y: scroll;
+}
+
+.qq-content::-webkit-scrollbar {
+    width: 9px;
+    display: block 
+    /* background: linear-gradient(to right, rgb(161, 235, 226), rgb(183, 241, 235), rgb(161, 235, 226)); */
+}
+
+ .qq-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, rgb(252, 148, 102), rgb(255, 157, 117));
+    border-radius: 40px;
+} 
+
+.qq-content::-webkit-scrollbar-track {
+    background: linear-gradient(to right, rgb(161, 235, 226), rgb(183, 241, 235), rgb(161, 235, 226));
+    border-radius: 8px;
+}
+.qq-content b {
+    color: rgb(253, 107, 47) 
+}
+
+.xsqun {
+    margin-top: 40px;
+    height: 590px;
+    width: 100%;
+}
+
+.xsqun-left {
+    display: inline-block;
+    width: 410px;
+    height: 100%;
+}
+
+.xsqun-right {
+    vertical-align: top;
+    display: inline-block;
+    width: 410px;
+    height: 100%;
+}
+
+.xsqun-one {
+    height: 46px;
+    line-height: 46px;
+    width: 360px;
+    font-size: 14px;
+    color: rgb(253, 176, 80);
+    margin-right: 65px;
+    /* 发现一个小trick */
+    /* border: 6px solid; 
+    border-image: url(../images/guide/qq.png) 0 0 50 0 fill; */
+    border: 4px dashed; 
+}
+
+.xsqun-one:nth-child(odd) {
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+} 
+
+.xsqun-one:nth-child(even) {
+    border-image: url(../images/guide/line2.png) 0 0 30 0;
+}
+
+.xsqun-one:last-child {
+    border: none;
+}
+
+
+
+
+.lxqun {
+    margin-top: 40px;
+    height: 590px;
+    width: 100%;
+}
+
+.lxqun-left {
+    display: inline-block;
+    width: 410px;
+    height: 100%;
+}
+
+.lxqun-right {
+    vertical-align: top;
+    display: inline-block;
+    width: 410px;
+    height: 100%;
+}
+
+.lxqun-one {
+    height: 46px;
+    line-height: 46px;
+    width: 360px;
+    font-size: 14px;
+    color: rgb(253, 176, 80);
+    margin-right: 65px;
+    border: 4px dashed; 
+}
+
+.lxqun-one:nth-child(odd) {
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+} 
+
+.lxqun-one:nth-child(even) {
+    border-image: url(../images/guide/line2.png) 0 0 30 0;
+}
+
+.lxqun-one:last-child {
+    border: none;
+}
