@@ -51,6 +51,87 @@
     
 }
 
+
+
+
+
+
+.lists {
+    width: 100%;
+    height: 100%;
+    background: url(../images/guide/qq.png) no-repeat; 
+    background-position: 10px 0px;
+    position: relative;
+    display: none;
+}
+
+.lists-content {
+    width: 850px;
+    height: 760px;
+    position: absolute;
+    right: 55px;
+    top: 60px;
+}
+
+.lists-one {
+    min-height: 70px;
+    width: 600px;
+    font-size: 14px;
+    color: rgb(253, 176, 80);
+    margin: 0 auto;
+    border: 4px dashed;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.lists-one:nth-child(odd) {
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+} 
+
+.lists-one:nth-child(even) {
+    border-image: url(../images/guide/line2.png) 0 0 30 0;
+}
+
+.lists-one:last-child {
+    border: none;
+}
+
+.lists .b {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: normal;    
+    color: rgb(253, 107, 47);
+}
+
+.lists-one-content {
+    width: 510px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .qq {
     width: 100%;
     height: 100%;
@@ -64,7 +145,7 @@
     height: 760px;
     position: absolute;
     right: 30px;
-    top: 80px;
+    top: 60px;
     overflow-y: scroll;
 }
 
@@ -84,11 +165,12 @@
     border-radius: 8px;
 }
 .qq-content b {
-    color: rgb(253, 107, 47) 
+    color: rgb(253, 107, 47);
+    font-weight: normal;
 }
 
 .xsqun {
-    margin-top: 40px;
+    margin-top: 30px;
     height: 590px;
     width: 100%;
 }
@@ -174,3 +256,129 @@
 .lxqun-one:last-child {
     border: none;
 }
+
+
+
+
+
+
+.safe {
+    width: 100%;
+    height: 100%;
+    background: url(../images/guide/qq.png) no-repeat; 
+    background-position: 10px 0px;
+    position: relative;
+    display: none;
+}
+
+.safe-content {
+    width: 850px;
+    height: 760px;
+    position: absolute;
+    right: 55px;
+    top: 80px;
+}
+
+.safe-one {
+    min-height: 70px;
+    width: 600px;
+    font-size: 14px;
+    color: rgb(253, 176, 80);
+     margin: 0 auto; 
+    border: 4px dashed; 
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.safe-one:nth-child(odd) {
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+} 
+
+.safe-one:nth-child(even) {
+    border-image: url(../images/guide/line2.png) 0 0 30 0;
+}
+
+.safe-one:last-child {
+    border: none;
+}
+
+.safe .b {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: normal;    
+    color: rgb(253, 107, 47);
+}
+
+.safe-one-content {
+    width: 510px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+.route {
+    width: 100%;
+    height: 100%;
+    background: url(../images/guide/qq.png) no-repeat; 
+    background-position: 10px 0px;
+    position: relative;
+    display: none;
+}
+
+.route-content {
+    width: 850px;
+    height: 760px;
+    position: absolute;
+    right: 55px;
+    top: 60px;
+}
+
+
+.route-one {
+    min-height: 72px;
+    width: 700px;
+    font-size: 14px;
+    color: rgb(253, 176, 80);
+    margin: 0 auto;
+    border: 4px dashed; 
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.route-one:nth-child(odd) {
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+} 
+
+.route-one:nth-child(even) {
+    border-image: url(../images/guide/line2.png) 0 0 30 0;
+}
+
+.route-one:last-child {
+    border: none;
+}
+
+.route-one b {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: normal;    
+    color: rgb(253, 107, 47);
+}
+
+.route-one span {
+    font-size: 16px;
+    display: inline-block;
+    color: rgb(255, 164, 42)
+}
+
+
+
+
+
+
+
+

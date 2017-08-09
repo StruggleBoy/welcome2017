@@ -1,17 +1,17 @@
 $(function(){
     $('.train-content').click(function(){
-        $('.underline').animate({left: "21.5%"}, 500);
+        $('.underline').animate({left: "21.5%"}, 600);
     });
     $('.train-know').click(function(){
-        $('.underline').animate({left: "46.5%"}, 500);
+        $('.underline').animate({left: "46.5%"}, 600);
     });
     $('.train-song').click(function(){
-        $('.underline').animate({left: "71.5%"}, 500);
+        $('.underline').animate({left: "71.5%"}, 600);
     });
     $('.training-tip-nav').find("span").click(function() {
         var num = $(this).parent().index();
         var _marginLeft = num * (-100);
-        $('.content-wrapper').animate({marginLeft: _marginLeft + "%"}, 1000)
+        $('.content-wrapper').animate({marginLeft: _marginLeft + "%"}, 600)
     });
     // 点击TAB
     $('.forward').click(function(){
