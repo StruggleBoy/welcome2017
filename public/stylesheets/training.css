@@ -156,6 +156,51 @@ div.show .song{
     padding: 20px;
 }
 
+.main {
+    position: relative;
+    top: -20px;
+    left: -25px;
+    width: 100%;
+    height: 720px;
+}
+
+.main-one {
+    height: 95px;
+    width: 700px;
+    font-size: 14px;
+    color: rgb(253, 176, 80);
+    margin: 0 auto;
+    border: 2px dashed;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.main-one b {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.main-one span {
+    display: inline-block;
+}
+
+.main-one:nth-child(odd) {
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+} 
+
+.main-one:nth-child(even) {
+    border-image: url(../images/guide/line2.png) 0 0 30 0;
+}
+
+.main-one:last-child {
+    border: none;
+}
+
+.know p, .jilv p {
+    border: 2px dashed;
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+}
+
 
 
 
@@ -271,7 +316,7 @@ div.show .song{
     position: relative;
     width: 923px;
     height: 870px;
-    margin: 40px 0px 0px 40px;
+    margin: 60px 0px 0px 40px;
     overflow: hidden;
     border-radius: 20px;
 }
