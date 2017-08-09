@@ -22,9 +22,37 @@
                 <div class="help-underline"></div>
                 
                 </div>
+                <div class="questions-all-bar">
+                    <div class="questions-content">提问内容</div>
+                    <div class="questions-people">提问者</div>
+                    <div class="questions-time">时间</div>
+                </div>
                 <div class="content-help">
                     <ul>
-                        <li>1</li>
+                        <li class='questions-all'>
+                            <div class="questions-all-content">
+                                <div class="qsContain">
+                                    <% for (let i = 0; i < data.length; i++) { %>
+                                        <div class="question">
+                                            <div class="question-content"><%= data[i].title %></div>
+                                            <div class="question-people"><%= data[i].name %></div>
+                                            <div class="question-time"><%= data[i].create_time.slice(0, 10) %></div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="questions-all-pages">
+                                <div class="allPages">
+                                   <div class="pageContain">
+                                        <% for (var i = 1; i <= len; i++) { %>
+                                            <div class="onePage" num='<%- i %>'><%= i %></div>
+                                        <% } %>
+                                   </div>
+                                   <div class="leftArrow"></div>
+                                   <div class="rightArrow"></div>
+                                </div>
+                            </div>
+                        </li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
@@ -53,3 +81,70 @@
         </div>
     </div>
 </div>
+
+<script>
+$(function () {
+    let $nums = $('.onePage')
+    let length = $nums.length
+    
+    let $arrowL = $('.leftArrow')
+    let $arrowR = $('.rightArrow')
+
+    let $contain = $('.qsContain')
+
+    $('.onePage:first-child').addClass('numClicked')
+
+    $nums.click(function () {
+        if ($(this).hasClass('numClicked')) {
+            return 
+        }
+        else {
+            let oldVal = parseInt($('.numClicked').attr('num'))
+            let newVal = parseInt($(this).attr('num'))
+            if (newVal > oldVal) {
+                let diVal = newVal - oldVal
+                $contain.animate({top: `-=${diVal * 500}px`}, 1000)
+            }
+            if (newVal < oldVal) {
+                let diVal = oldVal - newVal
+                $contain.animate({top: `+=${diVal * 500}px`}, 1000)
+            }
+            $nums.removeClass('numClicked')
+            $(this).addClass('numClicked')
+            
+        }
+    })
+
+    
+
+    $arrowL.click(function () {
+        let oldVal = parseInt($('.numClicked').attr('num'))
+        if (oldVal === 1) {
+            return 
+        }
+        else {
+            let newVal = oldVal - 1
+            $contain.animate({top: `+=500px`}, 1000)
+            $nums.removeClass('numClicked')
+            $(`.onePage[num=${newVal}]`).addClass('numClicked')
+        }
+    })
+
+    $arrowR.click(function () {
+        let oldVal = parseInt($('.numClicked').attr('num'))
+        if (oldVal === length) {
+            return 
+        }
+        else {
+            let newVal = oldVal + 1
+            $contain.animate({top: `-=500px`}, 1000)
+            $nums.removeClass('numClicked')
+            $(`.onePage[num=${newVal}]`).addClass('numClicked')
+        }
+    })
+    
+
+})
+
+
+</script>
