@@ -6,7 +6,7 @@
 
 ```
 $git clone https://github.com/hongyan2017/welcome2017.git
-$cd welcome
+$cd welcome2017
 $npm install
 $npm start
 ```
@@ -17,7 +17,7 @@ $npm start
 
 
 
-## 工作
+## 工作流程
 
 前端页面在**views文件夹**下，后缀为ejs,可以看成和html差不多。
 
@@ -74,7 +74,13 @@ $git commit
 $git push
 ```
 
-如果github上代码有更新记得git pull到本地
+最好先git pull查看是否有代码冲突，再进行push
+
+
+
+## Contributor
+
+程浚哲，彭时夏，匡俊嘉
 
 
 

@@ -32,11 +32,11 @@
                         <li class='questions-all'>
                             <div class="questions-all-content">
                                 <div class="qsContain">
-                                    <% for (let i = 0; i < data.length; i++) { %>
+                                    <% for (let i = 0; i < all.data_all.length; i++) { %>
                                         <div class="question">
-                                            <div class="question-content"><%= data[i].title %></div>
-                                            <div class="question-people"><%= data[i].name %></div>
-                                            <div class="question-time"><%= data[i].create_time.slice(0, 10) %></div>
+                                            <div class="question-content"><%= all.data_all[i].title %></div>
+                                            <div class="question-people"><%= all.data_all[i].name %></div>
+                                            <div class="question-time"><%= all.data_all[i].create_time.slice(0, 10) %></div>
                                         </div>
                                     <% } %>
                                 </div>
@@ -44,7 +44,7 @@
                             <div class="questions-all-pages">
                                 <div class="allPages">
                                    <div class="pageContain">
-                                        <% for (var i = 1; i <= len; i++) { %>
+                                        <% for (var i = 1; i <= all.len_all; i++) { %>
                                             <div class="onePage" num='<%- i %>'><%= i %></div>
                                         <% } %>
                                    </div>
@@ -53,11 +53,128 @@
                                 </div>
                             </div>
                         </li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
+                        <li class='questions-study'>
+                            <div class="questions-all-content">
+                                <div class="qsContain">
+                                    <% for (let i = 0; i < study.data_study.length; i++) { %>
+                                        <div class="question">
+                                            <div class="question-content"><%= study.data_study[i].title %></div>
+                                            <div class="question-people"><%= study.data_study[i].name %></div>
+                                            <div class="question-time"><%= study.data_study[i].create_time.slice(0, 10) %></div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="questions-all-pages">
+                                <div class="allPages">
+                                   <div class="pageContain">
+                                        <% for (var i = 1; i <= study.len_study; i++) { %>
+                                            <div class="onePage" num='<%- i %>'><%= i %></div>
+                                        <% } %>
+                                   </div>
+                                   <div class="leftArrow"></div>
+                                   <div class="rightArrow"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='questions-life'>
+                            <div class="questions-all-content">
+                                <div class="qsContain">
+                                    <% for (let i = 0; i < life.len_life.length; i++) { %>
+                                        <div class="question">
+                                            <div class="question-content"><%= life.len_life[i].title %></div>
+                                            <div class="question-people"><%= life.len_life[i].name %></div>
+                                            <div class="question-time"><%= life.len_life[i].create_time.slice(0, 10) %></div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="questions-all-pages">
+                                <div class="allPages">
+                                   <div class="pageContain">
+                                        <% for (var i = 1; i <= life.len_life; i++) { %>
+                                            <div class="onePage" num='<%- i %>'><%= i %></div>
+                                        <% } %>
+                                   </div>
+                                   <div class="leftArrow"></div>
+                                   <div class="rightArrow"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='questions-activity'>
+                            <div class="questions-all-content">
+                                <div class="qsContain">
+                                    <% for (let i = 0; i < activity.data_activity.length; i++) { %>
+                                        <div class="question">
+                                            <div class="question-content"><%= activity.data_activity[i].title %></div>
+                                            <div class="question-people"><%= activity.data_activity[i].name %></div>
+                                            <div class="question-time"><%= activity.data_activity[i].create_time.slice(0, 10) %></div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="questions-all-pages">
+                                <div class="allPages">
+                                   <div class="pageContain">
+                                        <% for (var i = 1; i <= activity.len_activity; i++) { %>
+                                            <div class="onePage" num='<%- i %>'><%= i %></div>
+                                        <% } %>
+                                   </div>
+                                   <div class="leftArrow"></div>
+                                   <div class="rightArrow"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='questions-organ'>
+                            <div class="questions-all-content">
+                                <div class="qsContain">
+                                    <% for (let i = 0; i < organ.data_organ.length; i++) { %>
+                                        <div class="question">
+                                            <div class="question-content"><%= organ.data_organ[i].title %></div>
+                                            <div class="question-people"><%= organ.data_organ[i].name %></div>
+                                            <div class="question-time"><%= organ.data_organ[i].create_time.slice(0, 10) %></div>
+                                        </div>
+                                        
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="questions-all-pages">
+                                <div class="allPages">
+                                   <div class="pageContain">
+                                        <% for (var i = 1; i <= organ.len_organ; i++) { %>
+                                            <div class="onePage" num='<%- i %>'><%= i %></div>
+                                        <% } %>
+                                   </div>
+                                   <div class="leftArrow"></div>
+                                   <div class="rightArrow"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='questions-others'>
+                            <div class="questions-all-content">
+                                <div class="qsContain">
+                                    <% for (let i = 0; i < others.data_others.length; i++) { %>
+                                        <div class="question">
+                                            <div class="question-content"><%= others.data_others[i].title %></div>
+                                            <div class="question-people"><%= others.data_others[i].name %></div>
+                                            <div class="question-time"><%= others.data_others[i].create_time.slice(0, 10) %></div>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <div class="questions-all-pages">
+                                <div class="allPages">
+                                   <div class="pageContain">
+                                        <% for (var i = 1; i <= others.len_others; i++) { %>
+                                            <div class="onePage" num='<%- i %>'><%= i %></div>
+                                        <% } %>
+                                   </div>
+                                   <div class="leftArrow"></div>
+                                   <div class="rightArrow"></div>
+                                </div>
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
              </div>
@@ -83,65 +200,140 @@
 </div>
 
 <script>
+
+
+
 $(function () {
-    let $nums = $('.onePage')
-    let length = $nums.length
+    let numBar = (clas) => {
+        console.log(clas)
+        let $nums =  $(`${clas} .onePage`)
+        console.log($nums)
+        let length = $nums.length
+        
+        let $arrowL = $(`${clas} .leftArrow`)
+        let $arrowR = $(`${clas} .rightArrow`)
+
+        let $contain = $(`${clas} .qsContain`)
+
+        $(`${clas} .onePage:first-child`).addClass('numClicked')
+
+        $nums.click(function () {
+            console.log('click change')
+            if ($(this).hasClass('numClicked')) {
+                return 
+            }
+            else {
+                let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
+                let newVal = parseInt($(this).attr('num'))
+                if (newVal > oldVal) {
+                    let diVal = newVal - oldVal
+                    $contain.animate({top: `-=${diVal * 500}px`}, 1000)
+                }
+                if (newVal < oldVal) {
+                    let diVal = oldVal - newVal
+                    $contain.animate({top: `+=${diVal * 500}px`}, 1000)
+                }
+                $nums.removeClass('numClicked')
+                $(this).addClass('numClicked')
+                
+            }
+        })
+
+        
+
+        $arrowL.click(function () {
+            console.log('click left')
+            let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
+            if (oldVal === 1) {
+                return 
+            }
+            else {
+                let newVal = oldVal - 1
+                $contain.animate({top: `+=500px`}, 1000)
+                $nums.removeClass('numClicked')
+                $(`${clas} .onePage[num=${newVal}]`).addClass('numClicked')
+            }
+        })
+
+        $arrowR.click(function () {
+            console.log('click right')
+            let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
+            if (oldVal === length) {
+                return 
+            }
+            else {
+                let newVal = oldVal + 1
+                $contain.animate({top: `-=500px`}, 1000)
+                $nums.removeClass('numClicked')
+                $(`${clas} .onePage[num=${newVal}]`).addClass('numClicked')
+            }
+        })
+    }
+    numBar('.questions-all')
+    numBar('.questions-study')
+    numBar('.questions-life')
+    numBar('.questions-activity')
+    numBar('.questions-organ')
+    numBar('.questions-others')
+
+    // let $nums = $('.questions-all .onePage')
+    // let length = $nums.length
     
-    let $arrowL = $('.leftArrow')
-    let $arrowR = $('.rightArrow')
+    // let $arrowL = $('.questions-all .leftArrow')
+    // let $arrowR = $('.questions-all .rightArrow')
 
-    let $contain = $('.qsContain')
+    // let $contain = $('.questions-all .qsContain')
 
-    $('.onePage:first-child').addClass('numClicked')
+    // $('.questions-all .onePage:first-child').addClass('numClicked')
 
-    $nums.click(function () {
-        if ($(this).hasClass('numClicked')) {
-            return 
-        }
-        else {
-            let oldVal = parseInt($('.numClicked').attr('num'))
-            let newVal = parseInt($(this).attr('num'))
-            if (newVal > oldVal) {
-                let diVal = newVal - oldVal
-                $contain.animate({top: `-=${diVal * 500}px`}, 1000)
-            }
-            if (newVal < oldVal) {
-                let diVal = oldVal - newVal
-                $contain.animate({top: `+=${diVal * 500}px`}, 1000)
-            }
-            $nums.removeClass('numClicked')
-            $(this).addClass('numClicked')
+    // $nums.click(function () {
+    //     if ($(this).hasClass('numClicked')) {
+    //         return 
+    //     }
+    //     else {
+    //         let oldVal = parseInt($('.questions-all .numClicked').attr('num'))
+    //         let newVal = parseInt($(this).attr('num'))
+    //         if (newVal > oldVal) {
+    //             let diVal = newVal - oldVal
+    //             $contain.animate({top: `-=${diVal * 500}px`}, 1000)
+    //         }
+    //         if (newVal < oldVal) {
+    //             let diVal = oldVal - newVal
+    //             $contain.animate({top: `+=${diVal * 500}px`}, 1000)
+    //         }
+    //         $nums.removeClass('numClicked')
+    //         $(this).addClass('numClicked')
             
-        }
-    })
+    //     }
+    // })
 
     
 
-    $arrowL.click(function () {
-        let oldVal = parseInt($('.numClicked').attr('num'))
-        if (oldVal === 1) {
-            return 
-        }
-        else {
-            let newVal = oldVal - 1
-            $contain.animate({top: `+=500px`}, 1000)
-            $nums.removeClass('numClicked')
-            $(`.onePage[num=${newVal}]`).addClass('numClicked')
-        }
-    })
+    // $arrowL.click(function () {
+    //     let oldVal = parseInt($('.questions-all .numClicked').attr('num'))
+    //     if (oldVal === 1) {
+    //         return 
+    //     }
+    //     else {
+    //         let newVal = oldVal - 1
+    //         $contain.animate({top: `+=500px`}, 1000)
+    //         $nums.removeClass('numClicked')
+    //         $(`.questions-all .onePage[num=${newVal}]`).addClass('numClicked')
+    //     }
+    // })
 
-    $arrowR.click(function () {
-        let oldVal = parseInt($('.numClicked').attr('num'))
-        if (oldVal === length) {
-            return 
-        }
-        else {
-            let newVal = oldVal + 1
-            $contain.animate({top: `-=500px`}, 1000)
-            $nums.removeClass('numClicked')
-            $(`.onePage[num=${newVal}]`).addClass('numClicked')
-        }
-    })
+    // $arrowR.click(function () {
+    //     let oldVal = parseInt($('.questions-all .numClicked').attr('num'))
+    //     if (oldVal === length) {
+    //         return 
+    //     }
+    //     else {
+    //         let newVal = oldVal + 1
+    //         $contain.animate({top: `-=500px`}, 1000)
+    //         $nums.removeClass('numClicked')
+    //         $(`.questions-all .onePage[num=${newVal}]`).addClass('numClicked')
+    //     }
+    // })
     
 
 })
