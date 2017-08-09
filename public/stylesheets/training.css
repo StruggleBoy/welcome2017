@@ -26,7 +26,7 @@
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     display: none;
-    z-index: 300;
+    z-index: 9998;
 }
 
 .training-nav {
@@ -413,7 +413,7 @@ div.show .song{
     transition: top 1s;
     border-radius: 50px;
     background-color: white;
-    z-index: 301;
+    z-index: 9999;
 }
 
 
