@@ -201,141 +201,79 @@
 
 <script>
 
+let numBar = (clas) => {
+    let $nums =  $(`${clas} .onePage`)
+    let length = $nums.length
+    
+    let $arrowL = $(`${clas} .leftArrow`)
+    let $arrowR = $(`${clas} .rightArrow`)
+
+    let $contain = $(`${clas} .qsContain`)
+
+    $(`${clas} .onePage:first-child`).addClass('numClicked')
+
+    $nums.click(function () {
+        if ($(this).hasClass('numClicked')) {
+            return 
+        }
+        else {
+            let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
+            let newVal = parseInt($(this).attr('num'))
+            if (newVal > oldVal) {
+                let diVal = newVal - oldVal
+                $contain.animate({top: `-=${diVal * 500}px`}, 1000)
+            }
+            if (newVal < oldVal) {
+                let diVal = oldVal - newVal
+                $contain.animate({top: `+=${diVal * 500}px`}, 1000)
+            }
+            $nums.removeClass('numClicked')
+            $(this).addClass('numClicked')
+            
+        }
+    })
+
+    
+
+    $arrowL.click(function () {
+        let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
+        if (oldVal === 1) {
+            return 
+        }
+        else {
+            let newVal = oldVal - 1
+            $contain.animate({top: `+=500px`}, 1000)
+            $nums.removeClass('numClicked')
+            $(`${clas} .onePage[num=${newVal}]`).addClass('numClicked')
+        }
+    })
+
+    $arrowR.click(function () {
+        let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
+        if (oldVal === length) {
+            return 
+        }
+        else {
+            let newVal = oldVal + 1
+            $contain.animate({top: `-=500px`}, 1000)
+            $nums.removeClass('numClicked')
+            $(`${clas} .onePage[num=${newVal}]`).addClass('numClicked')
+        }
+    })
+}
+
+
 
 
 $(function () {
-    let numBar = (clas) => {
-        console.log(clas)
-        let $nums =  $(`${clas} .onePage`)
-        console.log($nums)
-        let length = $nums.length
-        
-        let $arrowL = $(`${clas} .leftArrow`)
-        let $arrowR = $(`${clas} .rightArrow`)
-
-        let $contain = $(`${clas} .qsContain`)
-
-        $(`${clas} .onePage:first-child`).addClass('numClicked')
-
-        $nums.click(function () {
-            console.log('click change')
-            if ($(this).hasClass('numClicked')) {
-                return 
-            }
-            else {
-                let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
-                let newVal = parseInt($(this).attr('num'))
-                if (newVal > oldVal) {
-                    let diVal = newVal - oldVal
-                    $contain.animate({top: `-=${diVal * 500}px`}, 1000)
-                }
-                if (newVal < oldVal) {
-                    let diVal = oldVal - newVal
-                    $contain.animate({top: `+=${diVal * 500}px`}, 1000)
-                }
-                $nums.removeClass('numClicked')
-                $(this).addClass('numClicked')
-                
-            }
-        })
-
-        
-
-        $arrowL.click(function () {
-            console.log('click left')
-            let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
-            if (oldVal === 1) {
-                return 
-            }
-            else {
-                let newVal = oldVal - 1
-                $contain.animate({top: `+=500px`}, 1000)
-                $nums.removeClass('numClicked')
-                $(`${clas} .onePage[num=${newVal}]`).addClass('numClicked')
-            }
-        })
-
-        $arrowR.click(function () {
-            console.log('click right')
-            let oldVal = parseInt($(`${clas} .numClicked`).attr('num'))
-            if (oldVal === length) {
-                return 
-            }
-            else {
-                let newVal = oldVal + 1
-                $contain.animate({top: `-=500px`}, 1000)
-                $nums.removeClass('numClicked')
-                $(`${clas} .onePage[num=${newVal}]`).addClass('numClicked')
-            }
-        })
-    }
+    
     numBar('.questions-all')
     numBar('.questions-study')
     numBar('.questions-life')
     numBar('.questions-activity')
     numBar('.questions-organ')
     numBar('.questions-others')
-
-    // let $nums = $('.questions-all .onePage')
-    // let length = $nums.length
     
-    // let $arrowL = $('.questions-all .leftArrow')
-    // let $arrowR = $('.questions-all .rightArrow')
-
-    // let $contain = $('.questions-all .qsContain')
-
-    // $('.questions-all .onePage:first-child').addClass('numClicked')
-
-    // $nums.click(function () {
-    //     if ($(this).hasClass('numClicked')) {
-    //         return 
-    //     }
-    //     else {
-    //         let oldVal = parseInt($('.questions-all .numClicked').attr('num'))
-    //         let newVal = parseInt($(this).attr('num'))
-    //         if (newVal > oldVal) {
-    //             let diVal = newVal - oldVal
-    //             $contain.animate({top: `-=${diVal * 500}px`}, 1000)
-    //         }
-    //         if (newVal < oldVal) {
-    //             let diVal = oldVal - newVal
-    //             $contain.animate({top: `+=${diVal * 500}px`}, 1000)
-    //         }
-    //         $nums.removeClass('numClicked')
-    //         $(this).addClass('numClicked')
-            
-    //     }
-    // })
-
-    
-
-    // $arrowL.click(function () {
-    //     let oldVal = parseInt($('.questions-all .numClicked').attr('num'))
-    //     if (oldVal === 1) {
-    //         return 
-    //     }
-    //     else {
-    //         let newVal = oldVal - 1
-    //         $contain.animate({top: `+=500px`}, 1000)
-    //         $nums.removeClass('numClicked')
-    //         $(`.questions-all .onePage[num=${newVal}]`).addClass('numClicked')
-    //     }
-    // })
-
-    // $arrowR.click(function () {
-    //     let oldVal = parseInt($('.questions-all .numClicked').attr('num'))
-    //     if (oldVal === length) {
-    //         return 
-    //     }
-    //     else {
-    //         let newVal = oldVal + 1
-    //         $contain.animate({top: `-=500px`}, 1000)
-    //         $nums.removeClass('numClicked')
-    //         $(`.questions-all .onePage[num=${newVal}]`).addClass('numClicked')
-    //     }
-    // })
-    
-
 })
 
 

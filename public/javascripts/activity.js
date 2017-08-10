@@ -5,12 +5,10 @@ $(function() {
     $('.help-nav .all').on('click',function() {
         var that = $(this);
         content.css('left',0);
-        console.log(that.position().left );
         underline.css('left',that.position().left + 'px');
     })
     $('.help-nav .study').on('click',function() {
         var that = $(this);
-        console.log(that.offset().left);
         content.css('left',-contLen + 'px');   
         underline.css('left',that.position().left + 'px');
     })
