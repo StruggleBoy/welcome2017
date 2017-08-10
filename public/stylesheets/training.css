@@ -88,7 +88,7 @@ div.show .mein{
 }
 
 div.show .song{
-    background: url(../images/training/bac_05.png);
+    background: url(../images/training/song_05.png);
     display: none;
 }
 
@@ -408,7 +408,7 @@ div.show .song{
     width: 918px;
     height: 814px;
     position: absolute;
-    left: 185px;
+    left: 193px;
     top: -820px;
     transition: top 1s;
     border-radius: 50px;
@@ -472,6 +472,127 @@ div.show .song{
 
 .bar:hover {
     cursor: pointer;
+}
+
+.training-song-content{
+    width: 80%;
+    margin: 100px 0 0 87px;
+}
+
+.song-words{
+    position: relative;
+    width: 100%;
+    height: 560px;
+    padding: 0 150px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.song-words pre{
+    position: absolute;
+    top: 0;
+    font-family: "weiruanyahei";
+    font-size: 18px;
+    color: #f9a447;
+    line-height: 30px;
+}
+
+.song-rate{
+    height: 20px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.song-bar{
+    margin-top: 7px;
+    height: 5px;
+    width: 80%;
+    background-color: #d2f0b8;
+    border-radius: 5px;
+    border: 1px solid #ffc853;
+    float: left;
+}
+
+.bar-line{
+    position: relative;
+    height: 6px;
+    border-radius: 5px;
+    width: 0%;
+    background-color: #ffc853;
+}
+
+.handle{
+    position: absolute;
+    display: block;
+    top: -6px;
+    left: 100%;
+    margin-left: -2px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.song-time{
+    height: 15px;
+    width: 15%;
+    float: right;
+}
+
+.song-icon{
+    width: 100%;
+    overflow: hidden;
+}
+
+.song-icon-item{
+    float: left;   
+    height: 65px;
+    width: 65px;
+    box-sizing: border-box;
+    margin: 0 20px; 
+    cursor: pointer;
+}
+
+.song-icon .list{
+    background: url(../images/training/list.png) center no-repeat;
+    margin-left: 150px;
+}
+
+.song-icon .before{
+    background: url(../images/training/before.png) center no-repeat;
+}
+
+.song-icon .play{
+    background: url(../images/training/play.png) no-repeat;
+}
+
+.song-icon .pause{
+    background: url(../images/training/before.png) no-repeat;
+}
+
+.song-icon .next{
+    background: url(../images/training/next.png) center no-repeat;
+}
+
+.song-icon .vol{
+    position: relative;
+    background: url(../images/training/vol.png) center no-repeat;
+    margin-right: 150px;
+}
+
+.vol-bar{
+    display: inline-block;
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    left: 70px;
+    top: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffc853;
+    background-color: #c9e5b1;
 }
 
 
@@ -621,3 +742,33 @@ div.show .song{
         height: 100%;
         vertical-align: middle;
     } 
+
+
+    .song-words {
+
+    }
+
+.song-words::-webkit-scrollbar {  
+    width: 12px;  
+    background-color:#9eeae2;
+    border-radius: 10px;      
+    
+}  
+   
+/* Track */  
+.song-words::-webkit-scrollbar-track {  
+    -webkit-box-shadow: inset 0 0 6px #9eeae2;   
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+}  
+   
+/* Handle */  
+.song-words::-webkit-scrollbar-thumb {  
+    -webkit-border-radius: 10px;  
+    border-radius: 10px;  
+    background: #ff9062;   
+    -webkit-box-shadow: inset 0 0 6px #9eeae2;   
+}  
+.song-words::-webkit-scrollbar-thumb:window-inactive {  
+    background: #9eeae2;
+} 
