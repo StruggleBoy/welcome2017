@@ -3,20 +3,229 @@
 <div class="guide-box">
     <div class="guide-content">
         <div class="allButtons">
-            <div class="guide-btn forward">学生寝室</div>
+            <div class="guide-btn forward stud" ref='stu-bedroom'>学生寝室</div>
             <div class="guide-btn forward">新生清单</div>
-            <div class="guide-btn forward">学生食堂</div>
-            <div class="guide-btn forward">周边风景</div>
+            <div class="guide-btn forward" ref='stu-mess'>学生食堂</div>
+            <div class="guide-btn forward" ref="stu-landscape">周边风景</div>
             <div class="guide-btn forward" ref='qq'>QQ群大全</div>
             <div class="guide-btn forward">安全守则</div>
             <div class="guide-btn forward">行车路线</div>
             <div class="guide-btn forward">周边生活</div>
         </div>
         <div class="allDivs">
+            <div class="stu-bedroom">
+                <div class="bedroom-content">
+                    <div class="bedroom-nav">
+                        <button class="xingye" index="0">兴业苑</button>
+                        <button class="zhixing" index="1">知行苑</button>
+                        <button class="mingli" index="2">明理苑</button>
+                        <button class="ningjing"  index="3">宁静苑</button>
+                        <div class="process-bar"></div>
+                    </div>
+                    <ul class="changeMess">
+                        <li class="xingye-bedroom-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="carousel-1 carou-left"><img src="../images/guide/bedroom/mingli/2.jpg" alt="mingli"></div>
+                                    <div class="carousel-2 carou-center"><img src="../images/guide/bedroom/mingli/3.jpg" alt="mingli"></div>
+                                    <div class="carousel-3 carou-right"><img src="../images/guide/bedroom/mingli/4.jpg" alt="mingli"></div>
+                                </div>
+                                <div class="demo">
+                                    <button class="left"></button>
+                                    <button class="right"></button>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                        <li class="zhixing-bedroom-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="carousel-1 carou-left"><img src="../images/guide/bedroom/ningjing/2.jpg" alt="ningjing"></div>
+                                    <div class="carousel-2 carou-center"><img src="../images/guide/bedroom/ningjing/3.jpg" alt="ningjing"></div>
+                                    <div class="carousel-3 carou-right"><img src="../images/guide/bedroom/ningjing/4.jpg" alt="ningjing"></div>
+                                </div>
+                                <div class="demo">
+                                    <button class="left"></button>
+                                    <button class="right"></button>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">知行苑（1—6，15,16）：</p>
+                                <p>位于中心食堂附近的1,5,6栋是学校现存最老的寝室，住宿条件比较差，整体情况是每层楼设有公用的卫生间</p>
+                                <p>、洗澡间，这也就意味着每个寝室都没有独立卫生间，没有阳台。处于校园中心，上课、生活都极其便利。</p>
+                                <p>但位于情人坡附近的15,16栋，是学校标准的4人间，上床下桌，配有阳台，独立卫生间。楼栋周边环境一流</p>
+                                <p>，食堂与超市一应俱全，为学习生活提供不少的便利。。</p>
+                            </div>
+                        </li>
+                        <li class="mingli-bedroom-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="carousel-1 carou-left"><img src="../images/guide/bedroom/xingye/2.jpg" alt="mingli"></div>
+                                    <div class="carousel-2 carou-center"><img src="../images/guide/bedroom/xingye/3.jpg" alt="mingli"></div>
+                                    <div class="carousel-3 carou-right"><img src="../images/guide/bedroom/xingye/4.jpg" alt="mingli"></div>
+                                </div>
+                                <div class="demo">
+                                    <button class="left"></button>
+                                    <button class="right"></button>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">明理苑（24—31,39）：</p>
+                                <p>位于千喜鹤食堂正街上，可以俯瞰全校以及南山的部分美丽景色，这里也是重邮夏天最凉爽的地方。可以坐</p>
+                                <p>私家车直达寝室，周围有两个超市和上铺，并且校车穿过，每个寝室都为6人间，并设有独立卫生间，每一</p>
+                                <p>栋楼里面配置有洗衣机可供大家使用，应有尽有，可以尽情满足同学们的平日生活需求。</p>
+                            </div>
+                        </li>
+                        <li class="ningjing-bedroom-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="ningjing-bedroom"><img src="../images/guide/bedroom/zhixing/2.jpg" alt="mingli"></div>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">宁静苑（8—12，32--35）：</p>
+                                <p>坐落在美丽的情人坡旁，是妹子们散心聊天约会的好去处；篮球、网球、羽毛球这些周围球场为大家的</p>
+                                <p>锻炼提供了方便，与新校区紧连，周边分布有“千喜鹤”、“延生”等食堂。宿舍基本为6人间基本情况与</p>
+                                <p>22-24相同且有独立的阳台、卫浴，床铺是上下铺与上床下桌的混搭，人流量很少，环境比较清静。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="guide-div"></div>
-            <div class="guide-div"></div>
-            <div class="guide-div"></div>
-            <div class="guide-div"></div>
+            <div class="stu-mess">
+                <div class="bedroom-content">
+                    <div class="mess-nav">
+                        <button class="xing" index="0">兴业苑</button>
+                        <button class="qianxi" index="1">千喜鹤</button>
+                        <button class="daxibei" index="2">大西北</button>
+                        <button class="honggaoliang"  index="3">红高粱</button>
+                        <button class="zhongxin"  index="4">中心食堂</button>
+                        <button class="yansheng"  index="5">衍生</button>
+                        <div class="process-bar"></div>
+                    </div>
+                    <ul class="changeBedroom">
+                        <li class="xingye-mess-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="carousel-1 carou-left"><img src="../images/guide/mess/xingye/1.jpg" alt="mingli"></div>
+                                    <div class="carousel-2 carou-center"><img src="../images/guide/mess/xingye/2.jpg" alt="mingli"></div>
+                                    <div class="carousel-3 carou-right"><img src="../images/guide/mess/xingye/3.jpg" alt="mingli"></div>
+                                </div>
+                                <div class="demo">
+                                    <button class="left"></button>
+                                    <button class="right"></button>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                        <li class="qianxi-mess-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="carousel-1 carou-left"><img src="../images/guide/mess/qianxihe/1.jpg" alt="mingli"></div>
+                                    <div class="carousel-2 carou-center"><img src="../images/guide/mess/qianxihe/2.jpg" alt="mingli"></div>
+                                    <div class="carousel-3 carou-right"><img src="../images/guide/mess/qianxihe/3.jpg" alt="mingli"></div>
+                                </div>
+                                <div class="demo">
+                                    <button class="left"></button>
+                                    <button class="right"></button>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                        <li class="daxibei-mess-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="daxibei-mess"><img src="../images/guide/mess/daxibei/1.jpg" alt="mingli"></div>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                        <li class="honggaoliang-mess-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="honggaoliang-mess"><img src="../images/guide/mess/honggaoliang/1.jpg" alt="mingli"></div>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                        <li class="zhongxin-mess-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="zhongxin-mess"><img src="../images/guide/mess/zhongxin/1.jpg" alt="mingli"></div>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                        <li class="yansheng-mess-bottom">
+                            <div class="bedroom-banner">
+                                <div class="carousel-container">
+                                    <div class="yansheng-mess"><img src="../images/guide/mess/yansheng/1.jpg" alt="mingli"></div>
+                                </div>
+                            </div>
+                            <div class="bedroom-word">
+                                <p class="summary">兴业苑（17--23栋）：</p>
+                                <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                                <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                                <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stu-landscape">
+                <div class="bedroom-content">
+                    <div class="bedroom-banner">
+                        <div class="bedroom-banner">
+                            <div class="carousel-container">
+                                <div class="carousel-1 carou-left"><img src="../images/guide/mess/xingye/1.jpg" alt="mingli"></div>
+                                <div class="carousel-2 carou-center"><img src="../images/guide/mess/xingye/2.jpg" alt="mingli"></div>
+                                <div class="carousel-3 carou-right"><img src="../images/guide/mess/xingye/3.jpg" alt="mingli"></div>
+                            </div>
+                            <div class="demo">
+                                <button class="left"></button>
+                                <button class="right"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bedroom-word">
+                        <p class="summary">兴业苑（17--23栋）：</p>
+                        <p>屹立于悠悠重邮高处，周边风景秀丽，分布在太极运动场周围，，周边有学校的兴业苑食堂及众多的超市</p>
+                        <p>、商铺，校车从这里穿过，内部均设有独立卫生间，并在一些楼层设有洗衣机供大家使用，根据每栋宿舍</p>
+                        <p>不同，楼层不同分为4人间、6人间两种。4人间都是上床下铺，而6人间则是上下铺与上床下桌的混搭。</p>
+                    </div>
+                </div>
+            </div>
             <div class="qq">
                 <div class="qq-content">
                     <b>学院新生群</b>
@@ -135,8 +344,9 @@
 </div>
 
 <script>
-let btns =  $('.allButtons .forward')
-let divs = $('.allDivs')
+let btns =  $('.allButtons .forward');
+let divs = $('.allDivs');
+
 
 btns.click(function () {
     btns.removeClass('btn-clicked')
@@ -146,4 +356,11 @@ btns.click(function () {
     divs.find(ref).show('fast')
     
 })
+
+
+
+
+
+
+
 </script>

@@ -22,6 +22,11 @@ $(function(){
             showScroll(content,bar,smallBox,box)
         }
     })
+
+    $('.bigger-close').on('click',function() {
+        bigger.style.top = -820 + 'px';       
+        maskApear.style.display = 'none'; 
+    })
 })
 
  
@@ -98,7 +103,8 @@ function showScroll(content,bar,smallBox,box) {
 var lists = document.querySelectorAll('.mien-image ul li'),
     bigger = document.querySelector('.bigger'),
     train_images = document.querySelector('.bigger-contain-image'),
-    maskApear = document.querySelector('.mask-appear');
+    maskApear = document.querySelector('.mask-appear'),
+    close = document.querySelector('.bigger-close');
 
     for(let i = 0 ;i < lists.length ; i++) {
         lists[i].addEventListener('click',function() {
@@ -107,10 +113,4 @@ var lists = document.querySelectorAll('.mien-image ul li'),
             maskApear.style.display = 'block';
         })
     }
-
-var close = document.querySelector('.bigger-close');
-    close.addEventListener('click',function() {
-        bigger.style.top = '-820px';       
-        maskApear.style.display = 'none'; 
-    }) 
 
