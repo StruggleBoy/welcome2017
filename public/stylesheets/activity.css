@@ -2,7 +2,7 @@
     width: 1089px;
     height: 1275px;
     background: url(../images/activity/activity-banner.png) no-repeat;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     overflow: hidden;
 }
 
@@ -63,22 +63,220 @@
     color: #6bc125;
     padding:0 32px;
 }
+
+
+
+
+.questions-all-bar {
+    width: 100%;
+    height: 92px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.questions-content {
+    width: 480px;
+    height: 100%;
+    color: rgb(253, 107, 47);
+    font-size: 20px;
+    line-height: 92px;
+    padding-left: 10px;
+    float: left;
+} 
+
+
+.questions-people {
+    float: left;
+    width: 185px;
+    height: 100%;
+    line-height: 92px;
+    font-size: 20px;
+    color: rgb(253, 107, 47);
+}
+
+.questions-time {
+    float: left;
+    width: 97px;
+    height: 100%;
+    line-height: 92px;
+    font-size: 20px;
+    color: rgb(253, 107, 47);
+}
+
+
 .content-help {
     position: relative;
-    left: 0;
     width: 600%;
-    height: 680px;
+    height: 600px;
     transition: left 0.8s;
 }
 .content-help ul {
     height: 100%;
 }
 .content-help li {
-    width: 16.66%;
-    height: 100%;
+    display: block;
+    width: 772px;
+    height: 600px;
     float: left;
-    background-color: skyblue;
+    /* background-color: skyblue; */
+    position: relative;
 }
+
+
+
+
+.questions-all-content {
+    width: 100%;
+    height: 500px;
+    /* background: pink; */
+     overflow: hidden; 
+}
+
+.qsContain {
+    width: 100%;
+    position: relative;
+}
+
+.question {
+    width: 100%;
+    height: 41px;
+    /* background: skyblue; */
+    border: 2px solid;
+    border-image: url(../images/guide/line.png) 0 0 30 0;
+}
+
+.question-content {
+    width: 490px;
+    height: 100%;
+    color: rgb(255, 164, 42);
+    font-size: 17px;
+    line-height: 42px;
+    padding-left: 10px;
+    float: left;
+    cursor: pointer;
+    
+} 
+
+
+.question-people {
+    float: left;
+    width: 150px;
+    height: 100%;
+    line-height: 42px;
+    font-size: 17px;
+    color: rgb(255, 164, 42);
+}
+
+.question-time {
+    float: left;
+    width: 122px;
+    height: 100%;
+    line-height: 42px;
+    font-size: 17px;
+    color: rgb(255, 164, 42);
+}
+
+
+
+
+.questions-all-pages {
+    width: 772px;
+    height: 120px;
+    /* background: pink; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    
+}
+
+.allPages{
+    min-width: 60px;
+    display: inline-block;  
+    /* display: table; */
+    /* margin: 0 auto; */
+    height: 100%;
+    /* background: grey; */
+    position: relative; 
+}
+
+.pageContain {
+    height: 40px;
+    margin-top: 44px;
+
+} 
+
+
+
+.onePage {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    float: left;
+    margin: 0 12px;
+    /* background: rgb(255, 197, 70);  */
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 197, 70); 
+    /* color: #fff; */
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.4s, color 0.7s;
+}
+
+
+/* .onePage:first-child {
+    background: rgb(255, 197, 70); 
+    color: #fff;
+} */
+
+
+.onePage.numClicked {
+    background: rgb(255, 197, 70); 
+    color: #fff;
+}
+
+
+.leftArrow {
+    width: 28px;
+    height: 40px;
+    background: url(../images/training/arrow-left.png) no-repeat;
+    position: absolute;
+    left: -28px;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.rightArrow {
+    width: 28px;
+    height: 40px;
+    background: url(../images/training/arrow-right.png) no-repeat;
+    position: absolute;
+    right: -28px;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer; 
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .help-underline {
     position: relative;
     left: 0px;
@@ -89,12 +287,15 @@
     transition: left 0.8s;
 }
 
+
+
+
 .welcome {
     margin: -20px 0 0 -10px;
     width: 971px;
     height: 939px;
     background: url(../images/activity/welcomeStudent.png) no-repeat;
-    display: block;
+    display: none;
 }
 
 .smile-activity {

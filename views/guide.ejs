@@ -3,14 +3,16 @@
 <div class="guide-box">
     <div class="guide-content">
         <div class="allButtons">
-            <div class="guide-btn forward stud" ref='stu-bedroom'>学生寝室</div>
-            <div class="guide-btn forward">新生清单</div>
+
+            <div class="guide-btn forward btn-clicked" ref='stu-bedroom'>学生寝室</div>
+            <div class="guide-btn forward" ref = 'lists'>新生清单</div>
             <div class="guide-btn forward" ref='stu-mess'>学生食堂</div>
             <div class="guide-btn forward" ref="stu-landscape">周边风景</div>
             <div class="guide-btn forward" ref='qq'>QQ群大全</div>
-            <div class="guide-btn forward">安全守则</div>
-            <div class="guide-btn forward">行车路线</div>
-            <div class="guide-btn forward">周边生活</div>
+            <div class="guide-btn forward" ref='safe'>安全守则</div>
+            <div class="guide-btn forward" ref='route'>行车路线</div>
+            <div class="guide-btn forward">周边生活</div>            
+
         </div>
         <div class="allDivs">
             <div class="stu-bedroom">
@@ -97,7 +99,40 @@
                     </ul>
                 </div>
             </div>
-            <div class="guide-div"></div>
+            <div class="lists">
+                <div class="lists-content">
+                    <div class="lists-one">
+                        <span class='b'>报到时间:</span>
+                        <div class=lists-one-content>本科新生2017年9月14、15日报道</div>
+                    </div>
+                    <div class="lists-one">
+                        <span class='b'>报到地点:</span>
+                        <div class=lists-one-content>重庆邮电大学风雨操场</div>
+                    </div>
+                    <div class="lists-one">
+                        <span class='b'>新生必带:</span>
+                        <div class=lists-one-content>自带同版近期照片共15张（要求光面相纸洗印，白底一寸，半神，正脸，免冠大头照片），新生档案，党
+团关系证明，户口本（需要迁户口的同学携带），录取通知书，高考准考证，身份证以及身份证（复印件
+多复印几份，多复印几份，虽然学校并未做要求），银行卡（缴学费）,少量现金。</div>
+                    </div>
+                    <div class="lists-one">
+                        <span class='b'>洗护用品:</span>
+                        <div class=lists-one-content>男生的剃须刀，女生的护肤品（男生也可以适当准备一些），日常洗漱需要的物品（诸如牙膏牙刷，毛巾，
+沐浴露，盆桶一以及洗衣物所需要的洗衣液，刷子等等。</div>
+                    </div>
+                    <div class="lists-one">
+                        <span class='b'>衣物方面:</span>
+                        <div class=lists-one-content>生的剃须刀，女生的护肤品（男生也可以适当准备一些），日常洗漱需要的物品（诸如牙膏牙刷，毛巾，
+沐浴露，盆桶一以及洗衣物所需要的洗衣液，刷子等等。</div>
+                    </div>
+                    <div class="lists-one">
+                        <span class='b'>个人物品:</span>
+                        <div class=lists-one-content>电脑（笔记本最宜，其他的数码产品根据自己的情况进行添置），以及一些学习物品（签字笔，笔记本等
+等），台灯，水杯等等。
+            </div>
+                    </div>
+                </div>
+            </div>
             <div class="stu-mess">
                 <div class="bedroom-content">
                     <div class="mess-nav">
@@ -203,7 +238,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="stu-landscape">
+
+
+            <div class="guide-div">
+                
+            </div>
+            <div class="guide-div"></div>
+           
+
+        <div class="stu-landscape">
                 <div class="bedroom-content">
                     <div class="bedroom-banner">
                         <div class="bedroom-banner">
@@ -336,8 +379,63 @@
                     </div>
                 </div>
             </div>
-            <div class="safe"></div>
-            <div class="guide-div"></div>
+            <div class="safe">
+                <div class="safe-content">
+                    <div class="safe-one">
+                        <span class='b'>防止上当:</span>
+                        <div class=safe-one-content>一些不法分子利用新生刚入学不熟悉的情况，以老师，学长或者老乡的身份骗取新生信任，然后以代费、减免学费等多种方式进行诈骗。</div>
+                    </div>
+                    <div class="safe-one">
+                        <span class='b'>现金适当:</span>
+                        <div class=safe-one-content>不携带过多现金。数额较大的现金应该及时存入银行，存折、银行卡、身份证尽量分开放；使用银行卡要谨慎以防密码泄露。</div>
+                    </div>
+                    <div class="safe-one">
+                        <span class='b'>拒绝推销:</span>
+                        <div class=safe-one-content>拒绝上门推销。许多不法分子以到寝室推销为名进行诈骗或盗窃，如若发现上门推销人员，应该及时报告宿管人员或者保卫处。</div>
+                    </div>
+                    <div class="safe-one">
+                        <span class='b'>注意防盗:</span>
+                        <div class=safe-one-content>室内注意防盗。要保管好自己的笔记本电脑、手机等贵重物品，不要将其随意放置，以免被“顺手牵羊”。</div>
+                    </div>
+                    <div class="safe-one">
+                        <span class='b'>消防安全:</span>
+                        <div class=safe-one-content>注意消防安全。爱护消防设施，寝室内不违章使用大功率电器。</div>
+                    </div>
+                    <div class="safe-one">
+                        <span class='b'>交通安全:</span>
+                        <div class=safe-one-content>注意交通安全。不乘坐“黑车”和存在安全隐患的车辆。</div>
+                    </div>
+                    <div class="safe-one">
+                        <span class='b'>求助:</span>
+                        <div class=safe-one-content>遇到情况及时与公安机关联系。在遇到不法侵害时，要及时与公安机关（110）或者学校保卫处联系（62461018,62460110）</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="route">
+                <div class="route-content">
+                    <div class="route-one">
+                        <b>迎新接站:</b>
+                        <span>报道期间，我校将在重庆火车北站南、北广场设新生接待站，有同学负责引导新生到指定地点乘车。</span>
+                    </div>
+                    <div class="route-one">
+                        <b>重庆江北机场（距离学校约40公里）:</b>
+                        <span>可乘机场大巴至上清寺后转乘108路公交车至南坪，再转乘346或347路公交车到学校；或乘轻轨三号线到南坪，再转乘346或347路公交车到学校；直接打车到校费用约为70元；</span>
+                    </div>
+                    <div class="route-one">
+                        <b>龙头寺火车站、重庆北站（距离学校约20公里）:</b>
+                        <span>乘323路或168路公交车至南坪，转乘346或347路公交车至学校：或乘轻轨三号线到南坪，再转乘346或347路公交车到学校；直接打车到校费用约40元；</span>
+                    </div>
+                    <div class="route-one">
+                        <b>菜园坝火车站、汽车站（距离学校约12公里）:</b>
+                        <span>可在菜园坝广场乘347路公交车至学校；直接打车到校费用约为25元；</span>
+                    </div>
+                    <div class="route-one">
+                        <b>朝天门码头（距离学校约9公里）:</b>
+                        <span>可乘车至南坪后转乘346或347路公交车至学校；直接打车到校费用约为20元。</span>
+                    </div>
+                </div>
+            </div>
             <div class="guide-div"></div>
         </div>
     </div>
@@ -351,6 +449,7 @@ let divs = $('.allDivs');
 btns.click(function () {
     btns.removeClass('btn-clicked')
     $(this).addClass('btn-clicked')
+
     let ref = $(this).attr('ref')
     divs.children().hide('fast')
     divs.find(ref).show('fast')

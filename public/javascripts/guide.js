@@ -31,7 +31,6 @@ $(function() {
         var zhongxin = $('.zhongxin');
         var yansheng = $('.yansheng');
         var messW = $('.xingye-mess-bottom');
-        $('.stud').addClass('btn-clicked');
 
 
         show(btns,zhixing,changeMess,BedW,45);
