@@ -307,15 +307,19 @@
 .join-activity {
     width: 570px;
     height: 258px;
-    margin: 80px auto;
+    margin-left: 180px;
+    margin-top: 110px;
     color: #ffa22a;
 }
 .join-activity span {
     font-weight: bold;
     color: #fd6b2f;
-    font-size: 16px;
+    font-size: 18px;
 }
 hr{
     border: 1px solid #c7eda5;
     display: none;
+}
+.smile-banner {
+    cursor: pointer;
 }
